@@ -107,7 +107,7 @@ Recurso: [Modelo de plan de negocios. Empresa de servicios informáticos. IGAPE]
   
 ## 4- Requirimentos
 
-> *EXPLICACIÓN*: Descrición dos medios materiais e das tecnoloxías necesarias que se usarán para desenvolver o proxecto incluíndo as linguaxes de programación frontend e backend, técnicas, librerías, bases de datos, servizos usados, servidores, API’s, etc.
+> *EXPLICACIÓN*: Descrición dos medios materiais e das tecnoloxías necesarias que se usarán para desenvolver o proxecto incluíndo as linguaxes de programación frontend e backend, técnicas, librerías, bases de datos, servizos usados, servidores, API’s, etc
 >
 > - **Infraestructura:** dominio web, servidor web dedicado, servidor de base de datos, almacenamento, memoria, ...
 > - **Backend:** tecnoloxías usadas.
