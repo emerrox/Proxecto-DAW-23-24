@@ -15,113 +15,73 @@
   - [5- Planificación](#5--planificación)
 
 
-> *EXPLICACIÓN*: Este documento será a páxina de explicación de en que consiste o teu proxecto. Coida a súa redacción con todo ou teu mimo. Elimina posteriormente todas as lineas "EXPLICACIÓN" cando creas finalizada a súa redacción.
-> Podes acompañar á redacción deste ficheiro con imaxes, pero non abuses deles.
-> Explica da mellor forma posible de en que consiste o proxecto é que ferramentas e linguaxes de programación empregarás.
 
 ## 1- Descrición do proxecto
 
-> *EXPLICACIÓN*: Realiza unha breve descrición do anteproxecto.Resalta o fundamental *coas túas propias palabras**. Utiliza unha linguaxe correcta, *pero natural**, que o entenda todo o mundo, mesmo e en especial, as persoas que non teñan un coñecemento técnico avanzado. Pode ser un estracto ou resumo de apartados que xa contemples noutros ficheiros.
->
->Neste apartado trátase de describir a análise realizada e a toma de decisións adoptada sobre aspectos básicos ou iniciais do proxecto como:
->
-> - ¿En que consiste o noso proxecto? ¿Cal é o propósito principal da aplicación a desenvolver? ¿Cales son os obxectivos?
-> - ¿A quen vai destinada a aplicación? (Contexto social ou sector empresarial, tipo de persoas, ...)
-> - ¿Cal é a necesidade ou necesidades que se pretenden cubrir ou satisfacer?
-> - ¿Existen na actualidade aplicacións que tenten dar resposta a esa(s) necesidade(s)? ¿En que medida o conseguen?
-> - ¿O desenvolvemento da aplicación abre unha oportunidade de negocio? ¿É posible comercializala? Como?
-> - ¿Que tecnoloxías son as máis axeitadas para a realización do proxecto?
-
-Kayak flow es una idea que viene a raiz de que en todos los deportos se han ido implementando las nuevas tecnologías tanto para facílitar
-el trabajo a los entrenadores como para llevar al maximo el rendimiento del deportista pero, los deportes con menos visibilidad como el piragüismo y el remo no estan llegando a estas herramientas.
-
-En esta aplicacion los usuarios podran ver el entreno que su entrenador les ha preparado y despues darles un feedback como les ha ido a lo largo de este, a su vez, los entrenadores pueden adjuntarles sus entrenamientos y llevar un seguimiento e historial de cada uno, ademas los pueden organizar por grupos.
-
-Aunque ya existen aplicaciones de seguimiento deportivo, no hay ninguna especifica para estos deportes y muchos usan las de otros deportes como ciclismo o running o algunos incluso tablas de excel
-
-El uso de esta aplicacion sería gratuito pero para grupos mas grandes o funcionalidades mas especificas se podria cobrar una subscripcion (solo del usuario de entrenador)
+KayakPlus es una aplicación diseñada para brindar apoyo a los deportistas y entrenadores de piragüismo y remo. Lo especial de KayakPlus es que ofrece una versión básica completamente gratuita. La idea surge de la falta de herramientas adaptadas específicamente a las necesidades de estos deportes. Con KayakPlus, los usuarios podrán seguir sus entrenamientos de manera personalizada, y los entrenadores podrán organizar y monitorear el progreso de sus deportistas. Aunque existen otras aplicaciones deportivas en el mercado, ninguna se centra en el piragüismo y el remo como lo hace KayakPlus. Además, ofrecemos una versión gratuita para los usuarios, con opciones de pago para funcionalidades adicionales. En resumen, KayakPlus es una herramienta que busca mejorar la práctica del piragüismo y el remo, con una versión básica gratuita disponible para todos los usuarios.
 
 ## 2- Xustificación do proxecto
 
-> *EXPLICACIÓN*: Neste apartado incluirase a información necesaria para xustificar a realización do proxecto. Debe indicarse como xurdiu a idea do proxecto, que obxectivo se persegue coa súa posta en marcha e/ou que problema vai resolver.
+La razón principal para crear KayakPlus es que actualmente no hay ninguna aplicación que ayude a los deportistas de piragüismo y remo a mejorar su rendimiento. Nuestra app les permitirá registrar sus entrenamientos y recibir consejos de sus entrenadores para mejorar. También hará más fácil para los entrenadores planificar y seguir los progresos de sus deportistas. Además, vemos una oportunidad de negocio en esto, ya que mucha gente está interesada en mejorar en estos deportes y estaríamos ofreciendo algo único en el mercado. En resumen, KayakPlus es una solución tecnológica que ayudará a los practicantes de piragüismo y remo a ser mejores en lo que hacen.
 
 ## 3- Axudas e financiación
 
-> *EXPLICACIÓN*: Neste apartado elaborarase un orzamento, indicando os recursos materiais e persoais necesarios, e as necesidades de financiamento para a súa posta en marcha.
+Para llevar a cabo el proyecto KayakPlus, es necesario contar con recursos materiales y humanos, así como financiación para cubrir los gastos de desarrollo y mantenimiento de la aplicación.
+
+### Recursos necesarios:
+
+ Se requerirá tanto un dominio web (kayakPlus.es) y un servidor que provea todo el proyecto incluyendo sus bases de datos  
+  
+### Financiación:
+
+ Aunque kayakPlus no es un proyecto que necesite una gran inversion para funcionar, un mínimo si necesita y en vista de que no hay ninguna ayuda o subvención pública para un negocio como el que propone kayakPlus, se buscarán inversores privados
 
 ## 4- Prevención de riesgos laborales
 
-> *EXPLICACIÓN*: Neste apartado indicaranse as necesidades de permisos e autorizacións para levar a cabo as actividades, se son precisas, identificaranse os riscos inherentes á execución, e definirase o plan de prevención de riscos, así como os medios e os equipamentos necesarios.
+La web deberá cumplir los requisitos legales para el uso de cookies, guardar información del usuario y generar beneficios que conllevan redactar y tener bien a la vista los textos legales que son:
 
-## 3- Modelo de negocio
+ + Aviso legal
+ + Política de Privacidad
+ + Política de Cookies	
+ + Condiciones Generales de Venta y Contratación
 
-> *EXPLICACIÓN*: Elección do modelo de negocio explicando a súa xustificación.
->
-> **Xustifica a elección.**
-> 1. Xustificación das necesidades detectadas que cubre o sistema a desenvolver.
-> 2. Posibilidades de comercialización do sistema (viabilidade, competidores, ...).
-> 3. Ideas para a súa comercialización.
 
-> Ejemplos de modelo de negocio: 
->   + Modelo de pago.
->   + Freemium: é de balde pero as funcionalidades extras son de pago.
->   + In house: desenvolvementos a medida para contornos empresariais.
->   + De subscrición.
->   + Por publicidade.
->   + Outros.
+## 5- Modelo de negocio
 
- 
-### 3.1- Viabilidade
+ KayakPlus tiene un sistema de comercialización freemium porque al ser la primera aplicacion web para este nicho de mercado, la idea es convertirse en un estandar dando la posibilidad de usarlo a quien quiera pero con algunas funciones más avanzadas de pago que sobre todo están enfocadas en clubs de piragüismo y remo más grandes y selecciones
 
-#### 3.1.1- Viabilidade técnica
+### 5.1- Viabilidade
 
-> - Será posible dispoñer dos recursos humanos e medios de produción necesarios (materias primas, maquinaria,  instalacións, etc.)?
-> - Existe algún impedimento técnico que dificulte o proceso produtivo?  
+#### 5.1.1- Viabilidade técnica
 
-#### 3.1.2- Viabilidade económica
+Técnicamente hablando es muy viable ya que solo se requiere dominio, servidor y un terminal donde programar que mismo puede ser el pc personal del programador
 
-> - Os beneficios do proxecto son superiores aos costes?
-> - As perdas poden cubrirse vía financiamento (por parte da administración pública, con subvencións, etc)?    
+#### 5.1.2- Viabilidade económica
 
-### 3.2- Competencia
+El proyecto en si no genera mucho coste, pero si que sería interesante usar una estrategia de marketing por redes sociales la cual se puede financiar al 100% costo perdido con la subvencion de kit digital para autonomos y pymes aunque uno de los requisitos es tener mas de 6 meses de actividad entonces solo se podria optar a ella despues de medio año del despliegue de la web
 
-- Identificación da competencia, as súas características e a súa posición no mercado.
-- Existencia de productos/servizos substitutivos.
+### 5.2- Competencia
 
-Recurso: [Modelo de plan de negocios. Empresa de servicios informáticos. IGAPE](http://www.igape.es/images/crear-unha-empresa/Recursos/PlansdeNegocio/16ServiciosInformaticos12_5_cas.pdf) (páxina 45 e seguintes)
+Realmente no hay una competencia directa pero se podría considerar competencia a las webs y apps como las de garmin y polar que tienen funciones parecidas a las nuestras pero como ya se explicó anteriormente, no están pensadas para deportes acuaticos, además su principal idea de negocio no son sus webs/apps si no los relojes deportivos para los cuales existen apis publicas que nosotros tambien podremos usar en nuetra web
 
-### 3.3- Promoción
+### 5.3- Promoción
 
-> *EXPLICACIÓN* Técnicas elixidas para a promoción da empresa.
->
-> - Técnicas elixidas:
->   + Redes sociais.
->   + Plataformas multimedia.
->   + Páxina web.
->   + Posicionamento web.
->   + Patrocinios.
->   + Participación en eventos.
->   + Prácticas de responsabilidade social corporativa. 
->   + Outros.
-> - Xustifica a elección.
-  
-## 4- Requirimentos
+La estrategia de promoción se centra en publicar contenido en redes sociales para atraer usuarios interesados en el deporte acuático, además la web estará programada con buenas practicas para el posicionamiento SEO en google para ser más visible.
 
-> *EXPLICACIÓN*: Descrición dos medios materiais e das tecnoloxías necesarias que se usarán para desenvolver o proxecto incluíndo as linguaxes de programación frontend e backend, técnicas, librerías, bases de datos, servizos usados, servidores, API’s, etc
->
-> - **Infraestructura:** dominio web, servidor web dedicado, servidor de base de datos, almacenamento, memoria, ...
-> - **Backend:** tecnoloxías usadas.
-> - **Frontend:** tecnoloxías usadas
+## 6- Requirimentos
 
-## 5- Planificación
+ - **Infraestructura:** dominio web, servidor web dedicado, servidor de base de datos
+ - **Backend:** PHP con mysql para las bases de datos
+ - **Frontend:** html, css y js
+ - **Integraciones:** Implemetará la api de Polar para recojer los datos de los relojes deportivos polar de los deportistas y Stripe como pasarela de pago
 
-> *EXPLICACIÓN*: Inclúe un calendario co tempo estimado a adicar a cada fase do proxecto.
->
-> O proxecto estará formado polas seguintes fases:
->
-> - Estudo preliminar
-> - Análise
-> - Deseño
-> - Codificación e probas (debe ser a fase máis longa).
->
-> Debe facerse un calendario ou un diagrama de Gantt indicando, para cada fase, a data de inicio, a súa duración e breve descrición das tarefas a realizar.
+Puede que no todas las tecnologias aparezcan en la primera versión y se listen aquí en vista a ser implementadas en nuevas versiones
+
+## 7- Planificación
+
+ O proxecto estará formado polas seguintes fases:
+
+ - Estudo preliminar || 1/04 - 15/04 (14 dias)
+ - Análise || 16/04 - 22/04 (7 dias)
+ - Deseño || 23/04 - 29/04 (7 dias) 
+ - Codificación e proba || 30/04 - 27/05 (28 dias)
