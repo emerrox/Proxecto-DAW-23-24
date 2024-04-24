@@ -73,7 +73,7 @@ La estrategia de promoción se centra en publicar contenido en redes sociales pa
  - **Infraestructura:** dominio web, servidor web dedicado, servidor de base de datos
  - **Backend:** PHP con mysql para las bases de datos
  - **Frontend:** html, css y js
- - **Integraciones:** Implemetará la api de Polar para recojer los datos de los relojes deportivos polar de los deportistas y Stripe como pasarela de pago
+ - **Integraciones:** Implemetará la api de el tiempo y Stripe como pasarela de pago
 
 Puede que no todas las tecnologias aparezcan en la primera versión y se listen aquí en vista a ser implementadas en nuevas versiones
 
