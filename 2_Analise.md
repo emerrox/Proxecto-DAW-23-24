@@ -12,7 +12,7 @@
 
 ## 1- Descrición Xeral
 
-KayakPlus es una aplicación diseñada para apoyar a deportistas y entrenadores de piragüismo y remo. Destaca por ofrecer una versión básica completamente gratuita, surgiendo de la falta de herramientas adaptadas a estas disciplinas. Permite seguir entrenamientos personalizados y a los entrenadores organizar y monitorear el progreso de los deportistas. A diferencia de otras aplicaciones deportivas, KayakPlus se enfoca específicamente en piragüismo y remo. Además, ofrece una versión gratuita con opciones de pago para funcionalidades adicionales. En resumen, KayakPlus busca mejorar la práctica de estos deportes, con una versión básica gratuita disponible para todos los usuarios.
+KayakPlus es una aplicación diseñada para brindar apoyo a los deportistas y entrenadores de cualquier deporte de embarcaciones ligeras.
 
 ## 2- Funcionalidades
 
@@ -31,8 +31,8 @@ Exemplo:
 
 ## 3- Tipos de usuarios
 
-- Usuario de deportista, que tendrá acceso a su feed y otras secciones en las que puede ver su informacion o interactuar con los entrenos
-- Usuario de entrenador, que puede subir, editar, eliminar los entrenos que aparecen en el feed de cada deportista, ademas de ver información de sus deportistas con los entrenos
+- Usuario de deportista, que verá los entrenos asignados a su usuario
+- Usuario de entrenador, que puede subir, editar, eliminar los entrenos que aparecen en el feed de cada deportista.
 
 ## 4- Contorno operacional
 
@@ -40,18 +40,17 @@ Navegador web actualizado y una conexion a interner
 
 ## 5- Normativa
 
-> *EXPLICACION* Investigarase que normativa vixente afecta ao desenvolvemento do proxecto e de que maneira. O proxecto debe adaptarse ás esixencias legais dos territorios onde vai operar.
-> 
-> Pola natureza dos sistema de información, unha lei que se vai a ter que mencionar de forma obrigatoria é la [Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDPGDD)](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673). O ámbito da LOPDPGDD é nacional. Se a aplicación está pensada para operar a nivel europeo, tamén se debe facer referencia á [General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/eli/reg/2016/679/oj). Na documentación debe afirmarse que o proxecto cumpre coa normativa vixente.
->
-> Para cumplir a LOPDPGDD e/ou GDPR debe ter un apartado na web onde se indique quen é a persoa responsable do tratamento dos datos e para que fins se van utilizar. Habitualmente esta información estructúrase nos seguintes apartados:
->
-> - Aviso legal.
-> - Política de privacidade.
-> - Política de cookies.
->
-> É acosenllable ver [exemplos de webs](https://www.spotify.com/es/legal/privacy-policy/) que conteñan textos legais referenciando a LOPDPGDD ou GDPR.
+Se deberá cumplir con la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD) y el Reglamento General de Protección de Datos (RGPD).
+
+La web deberá cumplir los requisitos legales para el uso de cookies, guardar información del usuario y generar beneficios que conllevan redactar y tener bien a la vista los textos legales que son:
+
+ + Aviso legal
+ + Política de Privacidad
+ + Política de Cookies	
+ + Condiciones Generales de Venta y Contratación
 
 ## 6- Melloras futuras
 
 > *EXPLICACION* É posible que o noso proxecto se centre en resolver un problema concreto que se poderá ampliar no futuro con novas funcionalidades, novas interfaces, etc.
+-Los entrenadores podran dividir a los usuarios por grupos
+-Los usuarios tendran la opcion de "reaccionar" a los entrenos dando su feedback
