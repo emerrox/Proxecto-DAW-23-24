@@ -16,18 +16,15 @@ KayakPlus es una aplicación diseñada para brindar apoyo a los deportistas y en
 
 ## 2- Funcionalidades
 
->*EXPLICACION* Describir que servizos ou operacións se van poder realizar por medio do noso proxecto, indicando que actores interveñen en cada caso.
->
-> Enumeradas, de maneira que na fase de deseño poidamos definir o diagrama ou configuración correspondente a cada funcionalidade.
-> Cada función ten uns datos de entrada e uns datos de saída. Entre os datos de entrada e de saída, realízase un proceso, que debe ser explicado.
-
-Exemplo:
-
 | Acción   |  Descrición        |
 |----------|--------------------|
-| Alta de productos   | Dar de alta os productos na base de datos|
-| Modificar productos | Modificación de productos na base de datos|
-| Presentación dos productos  | Mostra dos productos por medio da páxina web |
+| Registro de usuario | Añade un usuario a la base de datos |
+| Inicio de sesión    | Muestra la pagina de inicio del usuario |
+| Añadir entreno   | Añade un entreno en la base de datos|
+| Modificar entreno | Modificación de entreno en la base de datos|
+| Eliminar entreno | Elimina un entreno en la base de datos |
+| Mostrar entrenos  | Muestra los entrenos de la proxima semana por medio de la pagina web |
+| Abrir entreno  | Muestra información detallada de un entreno en concreto por medio de la pagina web |
 
 ## 3- Tipos de usuarios
 
