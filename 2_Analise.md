@@ -47,5 +47,5 @@ La web deberá cumplir los requisitos legales para el uso de cookies, guardar in
 
 ## 6- Melloras futuras
 
--Los entrenadores podran dividir a los usuarios por grupos
--Los usuarios tendran la opcion de "reaccionar" a los entrenos dando su feedback
+- Los entrenadores podran dividir a los usuarios por grupos
+- Los usuarios tendran la opcion de "reaccionar" a los entrenos dando su feedback
