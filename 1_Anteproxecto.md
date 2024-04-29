@@ -144,10 +144,6 @@ Técnicamente hablando es un proyecto viable que no requiere de un gran servidor
 
 ### 2.6- Competencia
 
-**Davinci Labs:**
-- Ofrece entrenamiento personalizado y una comunidad activa.
-- Destaca por su enfoque en clases en vivo y bajo demanda.
-
 **Freeletics:**
 - Ofrece planes personalizados y desafiantes.
 - Utiliza inteligencia artificial para adaptarse al progreso del usuario.
