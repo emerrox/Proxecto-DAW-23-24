@@ -8,7 +8,6 @@
   - [5- Normativa](#5--normativa)
   - [6- Melloras futuras](#6--melloras-futuras)
 
-> *EXPLICACION*: Este documento describe os requirimentos para "nome do proxecto" especificando que funcionalidade ofrecerá e de que xeito.
 
 ## 1- Descrición Xeral
 
@@ -48,6 +47,5 @@ La web deberá cumplir los requisitos legales para el uso de cookies, guardar in
 
 ## 6- Melloras futuras
 
-> *EXPLICACION* É posible que o noso proxecto se centre en resolver un problema concreto que se poderá ampliar no futuro con novas funcionalidades, novas interfaces, etc.
 -Los entrenadores podran dividir a los usuarios por grupos
 -Los usuarios tendran la opcion de "reaccionar" a los entrenos dando su feedback
