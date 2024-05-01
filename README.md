@@ -36,17 +36,16 @@ KayakPlus es una aplicación diseñada para brindar apoyo a los deportistas y en
 ## Sobre o autor
 
 Soy mauro cordal, manejo técnologias tanto de front-end como html,css,javascript como de back-end php o java también con bases de datos. Ademas en mi tiempo libre hago kayakismo, por eso, vi la necesidad de una aplicación para que los entrenadores y deportistas puedan llevar un registro detallado de sus entrenamientos y así mejorar su rendimiento.
+
 **Contacto:**
 - Correo electrónico: [maurocordal@gmail.com](mailto:maurocordal@gmail.com)
-- GitHub: [TuPerfilGitHub](https://github.com/emerrox)
+- GitHub: [Emerrox](https://github.com/emerrox)
 
 ## Licenza
 
 Este proyecto está licenciado bajo la [Licencia Pública General de GNU (GPL-3.0)](LICENSE).
 
 ## Índice
-
-> *EXPLICACIÓN*: Simplemente indexa ordenadamente todo o tey proxecto.
 
 1. [Anteproyecto](doc/1_Anteproxecto.md)
 2. [Análise](doc/2_Analise.md)
