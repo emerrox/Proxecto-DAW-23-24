@@ -47,7 +47,16 @@ La web deberá cumplir los requisitos legales para el uso de cookies, guardar in
  + Política de Cookies	
  + Condiciones Generales de Venta y Contratación
 
+**¿Qué datos recopilamos?**
+
+Recopilamos los datos que nos proporcionas voluntariamente al utilizar nuestra plataforma, como al registrarte, o ponerte en contacto con nosotros. Estos datos pueden incluir tu nombre, dirección de correo electrónico, número de teléfono, detalles de pago y otra información personal del usuario relevante para mejorar tu experiencia en KayakPlus.
+
+**Eliminación de Datos**
+
+Los datos que no estén directamente relacionados con las actividades deportivas serán eliminados periódicamente para garantizar la privacidad de nuestros usuarios. El responsable de los datos recopilados y de su protección será el administrador actual de KayakPlus.
+
 ## 6- Melloras futuras
 
 - Dividir a los usuarios por grupos y que el administrador de cada uno pueda darlos de alta (por ahora solo hay un grupo y los usuarios se dan de alta en ese grupo automaticamente al registrarse)
 - Los usuarios tendran la opcion de "reaccionar" a los entrenos dando su feedback
+
