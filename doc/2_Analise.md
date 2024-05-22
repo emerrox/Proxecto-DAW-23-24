@@ -25,12 +25,12 @@ KayakPlus es una aplicación diseñada para brindar apoyo a los deportistas y en
 | Mostrar entrenos  | Muestra los entrenos de la proxima semana por medio de la pagina web |
 | Abrir entreno  | Muestra información detallada de un entreno en concreto por medio de la pagina web |
 | Eliminar usuario del grupo | Elimina la relacion entre un usuario y un grupo en la base de datos |
+| Cambiar rol usuario del grupo | cambia el rol de un usuario en un grupo en la base de datos |
 
 ## 3- Tipos de usuarios
 
 - Usuario de deportista, que verá los entrenos asignados a su usuario
-- Usuario de entrenador, que puede subir, editar, eliminar los entrenos que aparecen en el feed de cada deportista.
-- Usuario administrador, tiene control sobre los usuarios que pertenecen al grupo que administra.
+- Usuario de entrenador, que puede subir, editar, eliminar los entrenos que aparecen en el feed de cada deportista y tiene control sobre los usuarios que pertenecen al grupo que administra.
 
 ## 4- Contorno operacional
 
