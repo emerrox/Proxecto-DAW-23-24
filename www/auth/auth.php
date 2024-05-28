@@ -30,37 +30,11 @@ if (isset($_POST['ini'])){
     $res = $conn->query($sql);
 
     
-$rows = array();
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $rows[] = $row;
-    }
-} else {
-    echo "0 resultados";
-}
-?>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Resultados de la Consulta</title>
-</head>
-<body>
-    <h3>Resultados de la Consulta:</h3>
-    <?php
-    foreach ($rows as $row) {
-        echo "ID: " . $row['id'] . "<br>";
-        echo "Nombre: " . $row['nombre'] . "<br>";
-        echo "Email: " . $row['email'] . "<br><br>";
-    }
-    ?>
-
-    <h3>Dump de la Consulta:</h3>
-    <pre>
-    <?php var_dump($rows); ?>
-    </pre>
-<?php
+    echo "<pre>";
+    var_dump($res);
+    echo "</pre>";
+    
+    // session_start();
     $conn->close();
 }
 
