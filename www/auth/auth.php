@@ -25,12 +25,8 @@ if (isset($_POST['ini'])){
         exit();
     }
 
-    //include_once(__DIR__ . '/bd.php');
-    $conn = new mysqli('localhost','root','','kayakplus');
-    if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
-    }
-    $sql = "SELECT id, nombre, email FROM usuarios";
+    include_once(__DIR__ . '/bd.php');
+    $sql = "SELECT id, nombre, email, contraseña FROM usuarios WHERE nombre=$name";
     $res = $conn->query($sql);
 
     while ($fila=$res->fetch_array()) {
