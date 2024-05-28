@@ -1,5 +1,5 @@
 <?php
 
 if ($_SESSION['ok']) {
-    header('Location: ' . __DIR__);
+    header('Location: ../inicio.php');
 }
