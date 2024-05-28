@@ -25,15 +25,17 @@ if (isset($_POST['ini'])){
         exit();
     }
 
-    include_once(__DIR__ . '/bd.php');
-    $sql = 'SELECT * FROM usuarios';
+    //include_once(__DIR__ . '/bd.php');
+    $conn = new mysqli('localhost','root','','kayakplus');
+    if ($conn->connect_error) {
+        die("Conexión fallida: " . $conn->connect_error);
+    }
+    $sql = "SELECT id, nombre, email FROM usuarios";
     $res = $conn->query($sql);
 
-    
-    echo "<pre>";
-    var_dump($res);
-    echo "</pre>";
-    
+    while ($fila=$res->fetch_array()) {
+        echo $fila['id'];
+    }
     // session_start();
     $conn->close();
 }
