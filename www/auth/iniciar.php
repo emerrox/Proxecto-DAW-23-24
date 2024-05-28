@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <?php echo $login_error ?>
     <form action="./auth.php" method="post">
     <label for="name">Usuario</label>
     <input type="text" id="name" name="name" required><br><br>

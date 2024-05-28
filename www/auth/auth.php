@@ -26,13 +26,28 @@ if (isset($_POST['ini'])){
     }
 
     include_once(__DIR__ . '/bd.php');
-    $sql = "SELECT id, nombre, email, contraseña FROM usuarios WHERE nombre=$name";
-    $res = $conn->query($sql);
+    $sql = $conn->prepare("SELECT id, nombre, email, contraseña FROM usuarios WHERE nombre = ?");
+    $sql->bind_param("s", $name);
+    $sql->execute();
+    $res = $sql->get_result();
 
-    while ($fila=$res->fetch_array()) {
-        echo $fila['id'];
+    $login_error="$name no está registrado";
+
+    while ($user=$res->fetch_array()) {
+        if ($user['nombre']==$name) {
+            if ($user['contraseña']==$pass) {
+
+                // codigo login correcto 
+
+                $login_error='';
+            }else{
+                $login_error='contraseña incorrecta';
+            }
+        }
     }
+
     // session_start();
+    $sql->close();
     $conn->close();
 }
 
