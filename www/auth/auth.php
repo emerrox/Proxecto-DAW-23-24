@@ -25,9 +25,17 @@ if (isset($_POST['ini'])){
         exit();
     }
 
-    echo('bieeeeen');
+    include_once(__DIR__ . '/bd.php');
+    $sql = 'SELECT * FROM usuarios';
+    $res = $conn->query($sql);
+
+    
+    echo "<pre>";
+    var_dump($array);
+    echo "</pre>";
     
     // session_start();
+    $conn->close();
 }
 
 
