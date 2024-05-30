@@ -16,7 +16,7 @@ $pass = clean_input($_POST['pass']);
 if (!($name == '' || $pass == '')) {
 
     // crea una conoxión con la base de datos
-    include_once(__DIR__ . '/bd.php');
+    include_once('./bd.php');
 
     // pide los datos del usuario que tenga el mismo nombre que el que se envió por el formulario
     $sql = $conn->prepare("SELECT id, nombre, email, contraseña FROM usuarios WHERE nombre = ?");
@@ -33,7 +33,7 @@ if (!($name == '' || $pass == '')) {
 
                 // guarda la info del usuario y redirige a home
                 include_once(__DIR__ . './sesion.php');
-                header('Location: /home');
+                header('Location: ../home');
                 exit();
 
             }else{

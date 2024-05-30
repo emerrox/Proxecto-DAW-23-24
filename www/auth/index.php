@@ -2,7 +2,7 @@
 
 // Si ya se inició sesión redirige a inicio
 if ($_SESSION['ok']) {
-    header('Location: /home');
+    header('Location: ./home');
     exit();
 }
 
