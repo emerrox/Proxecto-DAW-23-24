@@ -10,7 +10,7 @@ function clean_input($data) {
 
 // Si ya se inició sesión redirige a inicio
 if ($_SESSION['ok']) {
-    header('Location: ../home');
+    header('Location: /home');
     exit();
 }
 
@@ -21,7 +21,7 @@ if (isset($_POST['ini'])){
     $pass = clean_input($_POST['pass']);
 
     if ($name == '' || $pass == '') {
-        header('Location: ./iniciar.php');
+        header('Location: ./form_iniciar.php');
         exit();
     }
 
@@ -53,4 +53,4 @@ if (isset($_POST['ini'])){
 }
 
 
-include_once(__DIR__ . '/iniciar.php');
+include_once(__DIR__ . '/form_iniciar.php');
