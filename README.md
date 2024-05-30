@@ -61,4 +61,4 @@ Este proyecto está licenciado bajo la [Licencia Pública General de GNU (GPL-3.
 
 ## Links
 
-> EXPLICACIÓN*: Ligazóns externas e descipciones destas ligazóns que creas conveniente indicar aquí. Xeralmente xa van estar integrados coa túa documentación, pero se requires realizar unha listaxe deles, leste é o lugar.
+-[Selector de colores](https://htmlcolorcodes.com/es/selector-de-color/)
