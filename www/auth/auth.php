@@ -36,17 +36,16 @@ if (isset($_POST['ini'])){
     while ($user=$res->fetch_array()) {
         if ($user['nombre']==$name) {
             if ($user['contraseña']==$pass) {
-
-                // codigo login correcto 
-
+                
                 $login_error='';
+                include_once(__DIR__ . './sesion.php');
+
             }else{
                 $login_error='contraseña incorrecta';
             }
         }
     }
 
-    // session_start();
     $sql->close();
     $conn->close();
 }
