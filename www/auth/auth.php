@@ -39,6 +39,8 @@ if (isset($_POST['ini'])){
                 
                 $login_error='';
                 include_once(__DIR__ . './sesion.php');
+                header('Location: ../home');
+                exit();
 
             }else{
                 $login_error='contraseña incorrecta';
