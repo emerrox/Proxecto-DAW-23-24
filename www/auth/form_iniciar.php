@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KayakPlus</title>
+</head>
+<body>
 <?php echo $login_error ?>
 <form action="./index.php" method="post">
 <label for="name">Usuario</label>
@@ -8,3 +16,6 @@
 
 <button type="submit" name="ini">Iniciar</button>
 </form>
+
+</body>
+</html>

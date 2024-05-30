@@ -32,7 +32,7 @@ if (!($name == '' || $pass == '')) {
                 $login_error='';
 
                 // guarda la info del usuario y redirige a home
-                include_once(__DIR__ . './sesion.php');
+                include_once('./sesion.php');
                 header('Location: ../home');
                 exit();
 
