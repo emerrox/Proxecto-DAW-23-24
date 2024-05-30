@@ -190,8 +190,8 @@ La web deberá cumplir los requisitos legales para el uso de cookies, guardar in
 
  - **Infraestructura:** dominio web y servidor (web y base de datos)
  - **Backend:** PHP y mysql para las bases de datos
- - **Frontend:** html, css y js con la libreria axios
- - **Integraciones:** Implemetará la api de el tiempo y Stripe como pasarela de pago (se implementara en el futuro)
+ - **Frontend:** html, css y js
+ - **Integraciones:** Implemetará la librería fullcalendar para facilitar el uso del calendario y la api de google calendar
 
 ## 4- Planificación
 
