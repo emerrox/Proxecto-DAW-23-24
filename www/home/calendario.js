@@ -25,7 +25,12 @@ const eventos = [
 
 const calendar = new Calendar(calendarioEl, {
     events: eventos,
-    locale: 'es'
+    locale: 'es',
+    headerToolbar: {
+        left : 'prev,next,today',
+        center : 'title',
+        right : 'dayGridMonth, timeGridWeek, listWeek'
+    }
 });
 
 calendar.render();
