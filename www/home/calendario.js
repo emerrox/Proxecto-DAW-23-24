@@ -1,7 +1,3 @@
-import { Calendar } from '@fullcalendar/core';
-import googleCalendarPlugin from '@fullcalendar/google-calendar';
-const { Calendar, EventApi } = FullCalendar;
-
 const calendarioEl = document.getElementById('calendario');
 
 const eventos = [
