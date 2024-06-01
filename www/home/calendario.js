@@ -17,7 +17,8 @@ const calendar = new FullCalendar.Calendar(calendarioEl, {
         list: 'Lista'
     },
     eventClick: function(info) {
-        showPopup(info);
+        info.jsEvent.preventDefault();
+        event_info(info)
     },
     googleCalendarApiKey: 'AIzaSyDAghMbjkWasOZXvKGJKpEjw4m4rMZ2xv4',
     events: {
@@ -25,22 +26,18 @@ const calendar = new FullCalendar.Calendar(calendarioEl, {
     }
 });
 
-function showPopup(info) {
-    const popup = document.getElementById('popup');
-    const title = document.getElementById('eventTitle');
-    const info = document.getElementById('eventInfo');
+function event_info(info) {
+    let modal = document.getElementById('modal');
+    let title = document.getElementById('eventTitle');
+    let eventInfo = document.getElementById('eventInfo');
   
-    // Llena el pop-up con la información del evento
-    title.textContent = info.event.title;
-    info.textContent = `Fecha: ${info.event.start.toISOString()}
-                        Descripción: ${info.event.extendedProps.descripcion}`;
-  
-    // Muestra el pop-up
-    popup.style.display = "block";
-  
-    // Centra el pop-up en la pantalla
-    popup.style.left = (window.innerWidth - popup.offsetWidth) / 2 + "px";
-    popup.style.top = (window.innerHeight - popup.offsetHeight) / 2 + "px";
+    title.textContent = event.title;
+    eventInfo.textContent = `Fecha: ${event.start.toISOString()}
+                            Descripción: ${event.extendedProps.descripcion}`;
+
+    // Mostrar el modal
+    modal.showModal();
+
   }
   
 
