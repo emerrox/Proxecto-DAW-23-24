@@ -37,7 +37,8 @@ function event_info(event) {
 
     // Mostrar el modal
     modal.showModal();
-
+    const close = document.getElementById('close');
+    close.addEventListener('click',modal.click())
   }
   
 
