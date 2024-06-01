@@ -18,7 +18,7 @@ const calendar = new FullCalendar.Calendar(calendarioEl, {
     },
     eventClick: function(info) {
         info.jsEvent.preventDefault();
-        event_info(info)
+        event_info(info.event)
     },
     googleCalendarApiKey: 'AIzaSyDAghMbjkWasOZXvKGJKpEjw4m4rMZ2xv4',
     events: {
@@ -26,7 +26,7 @@ const calendar = new FullCalendar.Calendar(calendarioEl, {
     }
 });
 
-function event_info(info) {
+function event_info(event) {
     let modal = document.getElementById('modal');
     let title = document.getElementById('eventTitle');
     let eventInfo = document.getElementById('eventInfo');
