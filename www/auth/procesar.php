@@ -16,7 +16,7 @@ $pass = clean_input($_POST['pass']);
 if (!($name == '' || $pass == '')) {
 
     // crea una conoxión con la base de datos
-    include_once('./bd.php');
+    include_once('../utils/bd.php');
 
     // pide los datos del usuario que tenga el mismo nombre que el que se envió por el formulario
     $sql = $conn->prepare("SELECT id, nombre, email, contraseña FROM usuarios WHERE nombre = ?");

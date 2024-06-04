@@ -19,11 +19,15 @@ const calendar = new FullCalendar.Calendar(calendarioEl, {
     eventClick: function(info) {
         info.jsEvent.preventDefault();
         event_info(info.event)
-    },
-    googleCalendarApiKey: 'AIzaSyDAghMbjkWasOZXvKGJKpEjw4m4rMZ2xv4',
-    events: {
-        googleCalendarId: '654e36d654a6538c60f36bfd84fd2e723220d816aa2bdf72baf5fb0b8cef15fe@group.calendar.google.com'
     }
+    // events: {
+    //     url: './eventos.php', // URL del endpoint para obtener eventos
+    //     method: 'GET',
+    // }
+    // googleCalendarApiKey: 'AIzaSyDAghMbjkWasOZXvKGJKpEjw4m4rMZ2xv4',
+    // events: {
+    //     googleCalendarId: '654e36d654a6538c60f36bfd84fd2e723220d816aa2bdf72baf5fb0b8cef15fe@group.calendar.google.com'
+    // }
 });
 
 function event_info(event) {
@@ -38,7 +42,7 @@ function event_info(event) {
     // Mostrar el modal
     modal.showModal();
     const close = document.getElementById('close');
-    close.addEventListener('click',modal.click())
+    close.addEventListener('click', ()=>modal.close())
   }
   
 
