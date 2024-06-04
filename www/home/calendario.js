@@ -49,22 +49,17 @@ function getEventos() {
 
 }
 async function obtenerDatos(url) {
-    try {
-      const respuesta = await fetch(url);
-      if (!respuesta.ok) {
-        throw new Error(`Error: ${respuesta.status}`);
-      }
-      const datos = await respuesta.json();
-      console.log('Datos:');
-      for (const propiedad in datos) {
-        console.log(`${propiedad}: ${datos[propiedad]}`);
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
   }
 document.addEventListener('DOMContentLoaded',()=>{
-    obtenerDatos('entrenos.php')
+    obtenerDatos('http://localhost/Proxecto-DAW-23-24/www/home/entrenos.php')
 })
 // calendar.render();
 
