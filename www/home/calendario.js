@@ -64,7 +64,7 @@ async function obtenerDatos(url) {
     }
   }
 document.addEventListener('DOMContentLoaded',()=>{
-    obtenerDatos('./entrenos.php')
+    obtenerDatos('entrenos.php')
 })
 // calendar.render();
 
