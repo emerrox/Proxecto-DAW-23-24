@@ -1,5 +1,3 @@
--- kayakplus_schema.sql
-
 -- Crear la base de datos y usarla
 CREATE DATABASE kayakplus;
 USE kayakplus;
@@ -7,7 +5,7 @@ USE kayakplus;
 -- tabla de usuarios
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL,
+    nombre VARCHAR(100) NOT NULL UNIQUE,
     email VARCHAR(100) NOT NULL UNIQUE,
     contraseña VARCHAR(100) NOT NULL,
     fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -57,10 +55,8 @@ CREATE TABLE entrenos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     descripcion TEXT,
-    fecha DATE NOT NULL,
-    duracion TIME,
-    grupo_id INT,
-    entrenador_id INT,
-    FOREIGN KEY (grupo_id) REFERENCES grupos(id),
-    FOREIGN KEY (entrenador_id) REFERENCES entrenadores(id)
+    hora_inicio TIMESTAMP NOT NULL,
+    hora_fin TIMESTAMP NOT NULL,
+    grupo_id INT NOT NULL REFERENCES grupos(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    entrenador_id INT NOT NULL REFERENCES entrenadores(id) ON DELETE RESTRICT ON UPDATE CASCADE
 );

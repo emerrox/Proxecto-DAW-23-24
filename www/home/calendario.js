@@ -45,6 +45,26 @@ function event_info(event) {
     close.addEventListener('click', ()=>modal.close())
   }
   
+function getEventos() {
 
-calendar.render();
+}
+async function obtenerDatos(url) {
+    try {
+      const respuesta = await fetch(url);
+      if (!respuesta.ok) {
+        throw new Error(`Error: ${respuesta.status}`);
+      }
+      const datos = await respuesta.json();
+      console.log('Datos:');
+      for (const propiedad in datos) {
+        console.log(`${propiedad}: ${datos[propiedad]}`);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+document.addEventListener('DOMContentLoaded',()=>{
+    obtenerDatos('./entrenos.php')
+})
+// calendar.render();
 
