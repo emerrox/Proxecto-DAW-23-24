@@ -1,13 +1,13 @@
 <?php
 
-include_once('../utils/bd.php')
+include_once('../utils/bd.php');
 $sql = "SELECT * FROM entrenos";
 $resultado = $conn->query($sql);
 $conn -> close();
 
 $entrenos = [];
 while ($fila = $resultado->fetch_assoc()) {
-  $entrenos = [
+  $entrenos[] = [
       'id' => $fila['id'],
       'title' => $fila['nombre'],
       'start' => $fila['hora_inicio'],
