@@ -12,7 +12,7 @@ while ($fila = $resultado->fetch_assoc()) {
       'title' => $fila['nombre'],
       'start' => $fila['hora_inicio'],
       'end' => $fila['hora_fin'],
-      'desc' => $fila['descripcion']
+      'description' => $fila['descripcion']
   ];
 }
 

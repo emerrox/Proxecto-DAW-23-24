@@ -1,9 +1,8 @@
 const $d = document,
-        $calendarioEl = document.getElementById('calendario')
+        $calendarioEl = $d.getElementById('calendario')
 
-let entrenos = []
 
-const calendar = new FullCalendar.Calendar($calendarioEl, {
+let calendar = new FullCalendar.Calendar($calendarioEl, {
 
     locale: 'es',
     firstDay: 1,
@@ -19,51 +18,44 @@ const calendar = new FullCalendar.Calendar($calendarioEl, {
         day: 'Día',
         list: 'Lista'
     },
-    eventClick: mostrar_info(),
-    events: entrenos
-    // googleCalendarApiKey: 'AIzaSyDAghMbjkWasOZXvKGJKpEjw4m4rMZ2xv4',
-    // events: {
-    //     googleCalendarId: '654e36d654a6538c60f36bfd84fd2e723220d816aa2bdf72baf5fb0b8cef15fe@group.calendar.google.com'
-    // }
+    eventClick: function(info){
+        mostrar_info(info.event);
+    },
+    eventSources: [
+        {
+        /**** 
+        *
+        *   CAMBIAR URL ANTES DE ENTREGAR!!!
+        *
+        ****/
+          url: 'http://localhost/Proxecto-DAW-23-24/www/home/entrenos.php', // Replace with your actual endpoint URL
+          method: 'GET', // Default method is GET, you can change it if needed
+          failureTolerance: 0 // Set to 0 to always trigger an error on failure
+        }
+      ]
+
 });
 
 function mostrar_info(e) {
-    let modal = document.getElementById('modal');
-    let title = document.getElementById('eventTitle');
-    let eventInfo = document.getElementById('eventInfo');
+    let modal = $d.getElementById('modal');
+    let title = $d.getElementById('eventTitle');
+    let eventInfo = $d.getElementById('eventInfo');
   
     title.textContent = e.title;
     eventInfo.textContent = `Fecha: ${e.start.toISOString()}
-                            Descripción: ${e.extendedProps.descripcion}`;
+                            Descripción: ${e.extendedProps.description}`;
 
     // Mostrar el modal
     modal.showModal();
-    const close = document.getElementById('close');
+    const close = $d.getElementById('close');
     close.addEventListener('click', ()=>modal.close())
   }
   
-function getEventos() {
 
-}
-async function getEntrenos(url) {
-    fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-    })
-    .catch(error => {
-      console.error(error);
-    });
-  }
-document.addEventListener('DOMContentLoaded',()=>{
-    /* *** 
 
-        CAMBIAR URL ANTES DE ENTREGAR!!!
+$d.addEventListener('DOMContentLoaded', ()=>{
 
-    *** */
-    entrenos = getEntrenos('http://localhost/Proxecto-DAW-23-24/www/home/entrenos.php')
-    console.log(entrenos);
-    // calendar.render();
+    calendar.render();
 
 })
 
