@@ -7,7 +7,7 @@ $conn -> close();
 
 $entrenos = [];
 while ($fila = $resultado->fetch_assoc()) {
-  $entrenos[] = [
+  $entrenos = [
       'id' => $fila['id'],
       'title' => $fila['nombre'],
       'start' => $fila['hora_inicio'],
