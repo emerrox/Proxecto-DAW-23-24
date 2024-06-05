@@ -62,3 +62,5 @@ Este proyecto está licenciado bajo la [Licencia Pública General de GNU (GPL-3.
 ## Links
 
 -[Selector de colores](https://htmlcolorcodes.com/es/selector-de-color/)
+-[Documentacion de fullcalendar](https://fullcalendar.io/)
+
