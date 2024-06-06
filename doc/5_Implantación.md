@@ -11,43 +11,34 @@
 
 ### 1.1- Instalación
 
-- [Archivo sql](./utils/kayakplus_schema.sql) para replicar el esquema la base de datos
-- [Archivo sql](./utils/kayakplus_schema.sql) para añadir datos de prueba a la base de datos
+**Requisitos**
 
+  Un servidor como xampp con phpmyadmin y php o un servidor en la nube de terceros en los que subir los archivos o incluso uno dedicado, debe tener php y phpmyadmin
 
-> *EXPLICACIÓN:* Neste apartado describiranse todos os pasos necesarios para que calquera persoa poida descargar o código do proxecto e continuar o seu desenvolvemento.
->
-> Como:
-> 
-> - Requirimentos de hardware, servidores na nube, etc.
-> - Software necesario: servidores (Exemplo servidor Web), software externo co que interaciona a nosa aplicación, contenedores, etc.
-> - Carga inicial de datos na base de datos. Migración de datos xa existentes noutros formatos.
-> - Usuarios da aplicación.
-> - Diagrama final de despregue (se hai variacións con respecto ó realizado na anterior fase).
+**Descarga e instalación:**
+
+  Bajar la carpeta [www](/www) y añadirlo directamente al htdocs (xamp)
+
+**Configuración de la base de datos**
+
+   [Archivo sql](./utils/kayakplus_schema.sql) para replicar el esquema la base de datos
+
+   [Archivo sql](./utils/kayakplus_schema.sql) para añadir datos de prueba a la base de datos
+   
+   **Probar**
+
+  Si añadiste los datos de prueba vas a tener registrados 5 usuarios llamados User1, User2, User3 ,etc. y todos con contraseña "abc123."
 
 ### 1.2- Administración do sistema
 
-> *EXPLICACIÓN:* Neste apartado indicarase información relativa á administración do sistema, é dicir, tarefas que se deberán realizar unha vez que o sistema estea funcionando.
->
-> Como:
-> 
-> - Copias de seguridade do sistema.
-> - Copias de seguridade da base de datos.
-> - Xestión de usuarios.
-> - Xestión seguridade.
-> - Xestión de incidencias, que poden ser de dous tipos: de sistema (accesos non autorizados á BD, etc) ou de fallos no software.
->
-> No caso de que sexan precisas.
+**copias de seguridad**
+
+Una vez terminada la fase de desarrollo, se pasaría todo el proyecto del entorno de pruebas con xamp a un servidor en la nube de terceros, que dentro del servicio ofrece copias de seguridad automaticas tanto de los archivos de la aplicacion como de la base de datos (informacion de usuarios y entrenos)
 
 ## 2- Manual de usuario
 
-> *EXPLICACIÓN:* Neste apartado fara
->
-> - Indicar se será necesario formar ós usuarios. En caso afirmativo planificar.
-> - Manual de usuario, FAQ ou outro xeito que sexa o máis adecuado para que os usuarios saiban usar a nosa aplicación informática.
->
-> Todo esto se a aplicación require de manual de usuario.
+La web tiene un flujo sencillo e intuitivo pero a mayores se incluira un apartado de preguntas frecuentes o ayuda para algunas acciones en concreto
 
 ## 3- Melloras futuras
 
-> *EXPLICACIÓN:* Neste apartado incluiranse as posibilidades de mellora da aplicación no futuro.
+Para mejorar la seguridad y la facilidad de inicio de sesion y registro de usuarios se implementará oauth de google que ademas permite el uso de la api de google calendar para sincronizar los calendarios
