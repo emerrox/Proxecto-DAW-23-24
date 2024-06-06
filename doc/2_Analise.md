@@ -57,6 +57,4 @@ Los datos que no estén directamente relacionados con las actividades deportivas
 
 ## 6- Melloras futuras
 
-- Dividir a los usuarios por grupos y que el administrador de cada uno pueda darlos de alta (por ahora solo hay un grupo y los usuarios se dan de alta en ese grupo automaticamente al registrarse)
-- Los usuarios tendran la opcion de "reaccionar" a los entrenos dando su feedback
-
+Para mejorar la seguridad y la facilidad de inicio de sesion y registro de usuarios se implementará oauth de google que ademas permite el uso de la api de google calendar para sincronizar los calendarios
