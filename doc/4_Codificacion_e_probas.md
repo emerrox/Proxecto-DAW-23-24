@@ -17,8 +17,9 @@ El prototipo fue desarrollado en figma a la vez que el diseño,[ver aquí](https
 
 ## 3- Innovación
 
-No caso de utilizar tecnoloxías diferentes ás estudadas no ciclo formativo, fai unha descrición dos retos asumidos e como se resolveron.
+Se utiliza la librería fullcalendar con ayuda de la documentacion oficial e ias
+Y se gestionan peticiones con ajax en un archivo local de php con ayuda de varios blogs e ias
 
 ## 4- Probas
 
-Deben describirse as probas realizadas e conclusión obtidas. Describir os problemas atopados e como foron solucionados.
+Al principio quise usar la api de google calendar para administrar los entrenos, con todo configurado en google cloud y fullcalendar conseguí poder ver los eventos de google en mi web pero no podia aditar los calendarios así que decidí dejarlo como mejora futura y simplemente guardarlos en la base de datos
