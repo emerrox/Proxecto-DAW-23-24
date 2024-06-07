@@ -6,17 +6,16 @@
     - [2.1- Idea de negocio](#21--idea-de-negocio)
     - [2.2- Xustificación da idea](#22--xustificación-da-idea)
     - [2.3- Segmento de clientes](#23--segmento-de-clientes)
-    - [2.4- Axudas e financiación](#24--axudas-e-financiación)
-    - [2.5- Modelo de negocio](#25--modelo-de-negocio)
-      - [2.5.1- Viabilidade](#251--viabilidade)
-        - [2.5.1.1- Viabilidade técnica](#2511--viabilidade-técnica)
-        - [2.5.1.2- Viabilidade económica](#2512--viabilidade-económica)
-      - [2.5.1.3- Conclusión](#2513--conclusión)
-    - [2.6- Competencia](#26--competencia)
-    - [2.7- Promoción](#27--promoción)
-    - [2.8- Proposta de valor](#28--proposta-de-valor)
-    - [2.9- Forma xurídica](#29--forma-xurídica)
-    - [2.10- Prevención de riesgos laborales](#210--prevención-de-riesgos-laborales)
+    - [2.4- Competencia](#24--competencia)
+    - [2.5- Proposta de valor](#25--proposta-de-valor)
+    - [2.6- Forma xurídica](#26--forma-xurídica)
+    - [2.7- Investimentos](#27--investimentos)
+      - [2.7.1- Custos](#271--custos)
+      - [2.7.2- Ingresos](#272--ingresos)
+    - [2.8- Viabilidade](#28--viabilidade)
+      - [2.8.1- Viabilidade técnica](#281--viabilidade-técnica)
+      - [2.8.2 - Viabilidade económica](#282---viabilidade-económica)
+      - [2.8.3- Conclusión](#283--conclusión)
   - [3- Requirimentos técnicos](#3--requirimentos-técnicos)
   - [4- Planificación](#4--planificación)
 
@@ -35,7 +34,7 @@ Una aplicación diseñada para apoyar a los deportistas y entrenadores de cualqu
 
 + Valor añadido
 
-Ofrece a los deportistas acceso al programa semanal correspondiente a su categoría y modalidad. Además, proporciona a los entrenadores la capacidad de seguir, organizar y visualizar estadísticas detalladas de los entrenamientos de sus deportistas.
+Ofrece a los deportistas acceso al programa correspondiente a su categoría y modalidad. Además, proporciona a los entrenadores la capacidad de seguir, organizar y visualizar estadísticas detalladas de los entrenamientos de sus deportistas.
 
 + Utilidad
 
@@ -44,10 +43,10 @@ Para los deportistas, KayakPlus ofrece una herramienta gratuita para acceder a p
 
 ### 2.2- Xustificación da idea
 
-**KayakPlus responde a una necesidad real:**
+**Necesidades a cubrir:**
 
 - Deportistas: planes de entrenamiento personalizados, seguimiento de progreso, consejos de expertos.
-- Entrenadores: seguimiento del rendimiento, análisis de datos, planes personalizados, comunicación eficiente.
+- Entrenadores: Comunicación eficiente, optimización de procesos, seguimiento del rendimiento, análisis de datos.
 
 **Diferenciación de la competencia:**
 
@@ -56,19 +55,19 @@ Para los deportistas, KayakPlus ofrece una herramienta gratuita para acceder a p
 
 **Segmento de mercado:**
 
-- Mercado de apps de entrenamiento deportivo en crecimiento desde la pandemia.
+- Mercado de apps de entrenamiento deportivo en crecimiento desde la pandemia. [ver aquí](https://es.statista.com/estadisticas/1459698/usuarios-de-apps-de-fitness-a-nivel-mundial/#:~:text=Alrededor%20de%20900%20millones%20de,el%20valor%20registrado%20para%202017.)
 - Segmento de deportes de embarcaciones ligeras desabastecido.
-- Amplio marcado: mas 60 clubs y alrededor de 2600 federados solo contando piragüismo en Galicia (ofrecido por [Statista](https://es.statista.com/estadisticas/1065251/numero-de-clubes-de-piragueismo-federados-por-comunidad-autonoma-espana/))
+- Amplio marcado: mas 60 clubs y alrededor de 2600 federados solo contando piragüismo en Galicia. [ver aquí](https://es.statista.com/estadisticas/1065251/numero-de-clubes-de-piragueismo-federados-por-comunidad-autonoma-espana/)
 
 #### DAFO (Debilidades, Amenazas, Fortalezas y Oportunidades)
 
-#### Debilidades:
+#### Debilidades: 
 
-- Posible competencia.
 - Sin antecedentes en el mercado
 
 #### Amenazas:
 
+- Posible competencia.
 - Cambios en la demanda del mercado.
 - Crecimiento de mercado menor del esperado.
 - Nuevas tecnologias
@@ -93,56 +92,7 @@ KayakPlus está dirigido a dos segmentos principales de usuarios:
 
 - **Entrenadores o clubs: (clientes)** Este segmento son profesionales que deben seguir el rendimiento de sus deportistas, analizar datos de entrenamiento, crear planes personalizados y comunicarse de manera eficiente con sus atletas.
 
-### 2.4- Axudas e financiación
-
-Se puede optar a una [subvencion](https://www.igape.gal/gl/axudas/ultimas-axudas/axuda/876?return=aW5kZXgucGhwP29wdGlvbj1jb21fb3J0aWdhcGUmdmlldz1heHVkYXMjdWx0aW1hcy1heHVkYXM=#sp-main-body) de la xunta para gastos en activos despues de realizar el registro gratuito en el [registro público de la Pequeña y Mediana Empresa Innovadora](https://ciencia.sede.gob.es/pagina/index/directorio/Servicios%20Comunes%20y%20Otros_Registro%20público%20de%20la%20Pequeña%20y%20Mediana%20Empresa%20Innovadora)
-
-### 2.5- Modelo de negocio
-
-El modelo de negocio que mas se ajusta a este proyecto es de subscricpción, los usuarios de tipo entrenador deberan pagar de forma mensual o anual
-
-#### 2.5.1- Viabilidade
-
-##### 2.5.1.1- Viabilidade técnica
-
-Técnicamente hablando es un proyecto viable que no requiere de un gran servidor ni una compleja base de datos, ademas a futuro se le pueden añadir nuevas funciones y aunque esté centrado en un nicho de mercado, es facilmente escalable a otras actividades, incluso fuera del ambito deportivo.
-
-##### 2.5.1.2- Viabilidade económica
-
-**INVESTIMENTOS**
-- Dominio: 9,75 euros.
-- Terminal: 500 euros.
-
-**Costos Fijos**
-- Servidor y mantenimiento mensual: 5,45 euros.
-- Conexión a internet: 40 euros/mes.
-
-**Costos Variables**
-- Marketing y publicidad: 100 euros inicialmente, variable según necesidades.
-
-**Impuestos y costos sociales**
-- IVA: Calculado según los ingresos.
-- IRPF: Estimado en un 20%.
-- Cuota de autónomo: 58,06 euros/mes.
-- Seguridad Social: 872,55 euros/mes.
-
-**INGRESOS**
-- Suscripciones anuales: 200 euros por suscripción.
-- Estimación inicial de suscriptores anuales: 60.
-
-**VIABLE? ESCALABLE?**
-- Con estos valores se puede estimar un beneficio neto anual de 287€ con lo que tardaría menos de dos años en ser rentable. Aunque en el futuro se pueden añadir diferentes suscripciones con nuevas funciones o buscar clientes en otro mercado como por ejemplo otro deporte.
-
-#### 2.5.1.3- Conclusión
-
-- Es un proyecto viable tanto técnicamente como económicamente. Los beneficios estimados superan los costos, lo que sugiere que el proyecto puede ser rentable a corto plazo.
-
-- Las pérdidas podrían cubrirse mediante financiamiento adicional, por la administración pública o por subvenciones privadas.
-
-- Tiene el potencial de crecer y expandirse a nuevos mercados en el futuro, lo que aumentaría su viabilidad y rentabilidad.
-
-
-### 2.6- Competencia
+### 2.4- Competencia
 
 **Freeletics:**
 - Ofrece planes personalizados y desafiantes.
@@ -152,11 +102,7 @@ Técnicamente hablando es un proyecto viable que no requiere de un gran servidor
 - Proporciona entrenamiento gratuito de calidad.
 - Atractivo para fanáticos de Nike y quienes buscan entrenamientos gratuitos
 
-### 2.7- Promoción
-
-La estrategia de promoción se centra en publicar contenido en redes sociales para atraer usuarios interesados en el deporte.
-
-### 2.8- Proposta de valor
+### 2.5- Proposta de valor
 
 **Diferenciación de la Competencia:**
 
@@ -171,20 +117,91 @@ La estrategia de promoción se centra en publicar contenido en redes sociales pa
 
 - Se aporta un valor al mercado por mejorar el rendimiento de los deportistas y mejorar la eficiencia de los entrenadores.
 
-### 2.9- Forma xurídica
+### 2.6- Forma xurídica
 
 Autonomo, es decir, la persona detras de KayakPlus es responsable legal y financieramente de todo el negocio. No hay separación legal entre la persona y la empresa. Los ingresos de KayakPlus se consideran ingresos personales del propietario y deben declararse como impuestos personal.
 
-### 2.10- Prevención de riesgos laborales
+### 2.7- Investimentos
 
-Se deberá cumplir con la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD) y el Reglamento General de Protección de Datos (RGPD).
+- **Dominio web:** 10 euros.
+- **Servidor e infraestrutura de hosting:** 5,45 euros/mes.
+- **Terminal:** 500 euros.
+- **Conexión a internet:** 40 euros/mes.
+- **Marketing e publicidade inicial:** 100 euros.
+- **Gastos de luz:** 50 euros/mes.
 
-La web deberá cumplir los requisitos legales para el uso de cookies, guardar información del usuario y generar beneficios que conllevan redactar y tener bien a la vista los textos legales que son:
+#### 2.7.1- Custos
 
- + Aviso legal
- + Política de Privacidad
- + Política de Cookies	
- + Condiciones Generales de Venta y Contratación
+**Custos Fixos:**
+
+- **Servidor e mantemento mensual:** 5,45 euros/mes.
+- **Conexión a internet:** 40 euros/mes.
+- **Gastos de luz:** 50 euros/mes.
+- **Nómina:** 1.500 euros/mes.
+- **Cuota de autónomo:** 58,06 euros/mes.
+- **Seguridade Social:** 872,55 euros/mes.
+
+
+**Custos Variables:**
+
+- **Marketing e publicidade:** 100 euros inicialmente, variable segun necesidades futuras.
+- **Impostos e custos sociais:**
+  - **IVA:** Calculado segun ingresos.
+  - **IRPF:** 20%.
+
+### 2.8- Viabilidade
+
+#### 2.8.1- Viabilidade técnica
+
+Técnicamente hablando es un proyecto viable que no requiere de un gran servidor ni una compleja base de datos, ademas a futuro se le pueden añadir nuevas funciones y aunque esté centrado en un nicho de mercado, es facilmente escalable a otras actividades, incluso fuera del ambito deportivo.
+
+#### 2.8.2 - Viabilidade económica
+
+**INVESTIMENTOS INICIAIS:**
+
+- Dominio web: 9,75 euros.
+- Terminal: 500 euros.
+
+**CUSTOS FIXOS ANUAIS:**
+
+- Servidor y mantenimiento mensual: 5,45 euros/mes x 12 meses = 65,40 euros.
+- Conexión a internet: 40 euros/mes x 12 meses = 480 euros.
+- Gastos de luz: 50 euros/mes x 12 meses = 600 euros.
+- Nómina: 1.500 euros/mes x 12 meses = 18.000 euros.
+- Cuota de autónomo: 58,06 euros/mes x 12 meses = 696,72 euros.
+- Seguridad Social: 872,55 euros/mes x 12 meses = 10.470,60 euros.
+
+**CUSTOS VARIABLES ANUAIS:**
+
+- Marketing y publicidad: 100 euros (inicial) + 50 euros/mes x 11 meses = 650 euros.
+- Impuestos (IRPF): 20% de los ingresos totales.
+
+**COSTOS TOTALES ANUALES:**
+
+- Costos fijos anuales: 30.312,72 euros.
+- Costos variables anuales: 650 euros.
+- Costos totales anuales: 30.962,72 euros.
+
+**SUSCRIPCIONES NECESARIAS:**
+
+1. **Ingresos necesarios para cubrir costos:**
+   - IRPF del 20% / ingresos necesarios antes de impuestos = 30.962,72 euros / 0.80 = 38.703,40 euros.
+
+2. **Número de suscripciones necesarias:**
+   - Suscripciones anuales: 250 euros por suscripción.
+   - Ingresos necesarios / Ingresos por suscripción = 38.703,40 / 250 = 154,81 suscripciones.
+
+**CONCLUSIÓN:**
+
+Para ser rentable, se necesitan 155 suscripciones anuales.
+
+#### 2.8.3- Conclusión
+
+- Es un proyecto viable tanto técnicamente como económicamente. Los beneficios estimados superan los costos, lo que sugiere que el proyecto puede ser rentable a corto plazo.
+
+- Las pérdidas podrían cubrirse mediante financiamiento adicional, por la administración pública o por subvenciones privadas.
+
+- Tiene el potencial de crecer y expandirse a nuevos mercados en el futuro, lo que aumentaría su viabilidad y rentabilidad.
 
 ## 3- Requirimentos técnicos
 
