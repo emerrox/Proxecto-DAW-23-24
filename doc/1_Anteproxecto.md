@@ -188,12 +188,9 @@ Técnicamente hablando es un proyecto viable que no requiere de un gran servidor
    - IRPF del 20% / ingresos necesarios antes de impuestos = 30.962,72 euros / 0.80 = 38.703,40 euros.
 
 2. **Número de suscripciones necesarias:**
-   - Suscripciones anuales: 250 euros por suscripción.
    - Ingresos necesarios / Ingresos por suscripción = 38.703,40 / 250 = 154,81 suscripciones.
+   - Suscripciones anuales: 250 euros por suscripción.
 
-**CONCLUSIÓN:**
-
-Para ser rentable, se necesitan 155 suscripciones anuales.
 
 #### 2.8.3- Conclusión
 
@@ -208,7 +205,7 @@ Para ser rentable, se necesitan 155 suscripciones anuales.
  - **Infraestructura:** dominio web y servidor (web y base de datos)
  - **Backend:** PHP y mysql para las bases de datos
  - **Frontend:** html, css y js
- - **Integraciones:** Implemetará la librería fullcalendar para facilitar el uso del calendario y la api de google calendar
+ - **Integraciones:** Implemetará la librería fullcalendar para facilitar el uso del calendario
 
 ## 4- Planificación
 
