@@ -16,6 +16,6 @@
 
 <button type="submit" name="ini">Iniciar</button>
 </form>
-
+<a href="./form_registrar.php">Registrar</a> si aun no tienes una cuenta
 </body>
 </html>

@@ -57,6 +57,8 @@ CREATE TABLE entrenos (
     descripcion TEXT,
     hora_inicio TIMESTAMP NOT NULL,
     hora_fin TIMESTAMP NOT NULL,
-    grupo_id INT NOT NULL REFERENCES grupos(id) ON DELETE RESTRICT ON UPDATE CASCADE,
-    entrenador_id INT NOT NULL REFERENCES entrenadores(id) ON DELETE RESTRICT ON UPDATE CASCADE
+    grupo_id INT NOT NULL,
+    entrenador_id INT NOT NULL,
+    FOREIGN KEY (grupo_id) REFERENCES grupos(id) ON DELETE CASCADE, 
+    FOREIGN KEY (entrenador_id) REFERENCES entrenadores(id) ON DELETE RESTRICT ON UPDATE CASCADE
 );

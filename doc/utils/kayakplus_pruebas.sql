@@ -6,7 +6,8 @@ INSERT INTO usuarios (nombre, email, contraseña) VALUES
 ('User2', 'user2@example.com', 'abc123.'),
 ('User3', 'user3@example.com', 'abc123.'),
 ('User4', 'user4@example.com', 'abc123.'),
-('User5', 'user5@example.com', 'abc123.');
+('User5', 'user5@example.com', 'abc123.'),
+('User6', 'user6@example.com', 'abc123.');
 
 -- Insertar deportistas
 INSERT INTO deportistas (id, nivel) VALUES
@@ -17,7 +18,8 @@ INSERT INTO deportistas (id, nivel) VALUES
 -- Insertar entrenadores
 INSERT INTO entrenadores (id, especialidad) VALUES
 (4, 'Kayak'),
-(5, 'canoa');
+(5, 'Canoa'),
+(6, 'Multidisciplinario');
 
 -- Insertar grupos
 INSERT INTO grupos (nombre, descripcion) VALUES
@@ -33,7 +35,9 @@ INSERT INTO grupo_deportistas (grupo_id, deportista_id) VALUES
 -- Insertar relación grupo_entrenadores
 INSERT INTO grupo_entrenadores (grupo_id, entrenador_id) VALUES
 (1, 4),
-(2, 5);
+(2, 5),
+(1, 6), -- Usuario6 entrenando en Grupo A
+(2, 6); -- Usuario6 entrenando en Grupo B
 
 -- Insertar entrenos
 INSERT INTO entrenos (nombre, descripcion, hora_inicio, hora_fin, grupo_id, entrenador_id) VALUES

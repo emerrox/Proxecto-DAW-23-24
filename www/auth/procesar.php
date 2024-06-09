@@ -1,5 +1,6 @@
 <?php
-// archivo que procesa el formulario
+include_once('../utils/bd.php');
+$conn = conectar_bd();
 
 // Funcion para limpiar datos de entrada
 function clean_input($data) {
@@ -15,9 +16,6 @@ $pass = clean_input($_POST['pass']);
 
 if (!($name == '' || $pass == '')) {
 
-    // crea una conoxión con la base de datos
-    include_once('../utils/bd.php');
-
     // pide los datos del usuario que tenga el mismo nombre que el que se envió por el formulario
     $sql = $conn->prepare("SELECT id, nombre, email, contraseña FROM usuarios WHERE nombre = ?");
     $sql->bind_param("s", $name);
@@ -32,6 +30,7 @@ if (!($name == '' || $pass == '')) {
                 $login_error='';
 
                 // guarda la info del usuario y redirige a home
+                $id=$user['id'];
                 include_once('./sesion.php');
                 header('Location: ../home');
                 exit();
