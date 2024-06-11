@@ -1,4 +1,5 @@
 <?php
+include_once('../templates/cabecera.html');
 echo "<h1>Administración de " . htmlspecialchars($grupo['nombre']) . "</h1>";
 echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
 ?>
@@ -71,3 +72,4 @@ echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
     </dialog>
 </form>
 <script src="../assets/grupo.js"></script>
+<?php include_once('../templates/footer.html'); ?>
