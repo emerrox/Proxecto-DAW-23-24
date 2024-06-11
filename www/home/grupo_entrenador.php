@@ -1,7 +1,7 @@
 <?php
 include_once('../templates/cabecera.html');
-echo "<h1>Administración de " . htmlspecialchars($grupo['nombre']) . "</h1>";
-echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
+echo "<h1>Administración de " . $grupo['nombre'] . "</h1>";
+echo "<h2>" . $grupo['descripcion'] . "</h2>";
 ?>
 
 <form id="administracion" method="POST" action="procesar_grupo_entrenador.php">
@@ -20,8 +20,8 @@ echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
             <?php
             foreach ($entrenadores as $entrenador) {
                 echo "<tr>";
-                echo "<td>" . htmlspecialchars($entrenador['nombre']) . "</td>";
-                echo "<td>" . htmlspecialchars($entrenador['especialidad']) . "</td>";
+                echo "<td>" . $entrenador['nombre'] . "</td>";
+                echo "<td>" . $entrenador['especialidad'] . "</td>";
                 echo "<td><input type='checkbox' name='eliminar_entrenadores[]' value='" . $entrenador['id'] . "'></td>";
                 echo "<td><input type='checkbox' name='cambiar_entrenadores[]' value='" . $entrenador['id'] . "'></td>";
                 echo "</tr>";
@@ -44,8 +44,8 @@ echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
             <?php
             foreach ($deportistas as $deportista) {
                 echo "<tr>";
-                echo "<td>" . htmlspecialchars($deportista['nombre']) . "</td>";
-                echo "<td>" . htmlspecialchars($deportista['nivel']) . "</td>";
+                echo "<td>" . $deportista['nombre'] . "</td>";
+                echo "<td>" . $deportista['nivel'] . "</td>";
                 echo "<td><input type='checkbox' name='eliminar_deportistas[]' value='" . $deportista['id'] . "'></td>";
                 echo "<td><input type='checkbox' name='cambiar_deportistas[]' value='" . $deportista['id'] . "'></td>";
                 echo "</tr>";
@@ -54,7 +54,7 @@ echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
         </tbody>
     </table>
     
-    <input type="hidden" name="grupo_id" value="<?php echo htmlspecialchars($gid); ?>">
+    <input type="hidden" name="grupo_id" value="<?php echo $gid; ?>">
     
     <button type="reset">Limpiar</button>
     <button type="submit">Guardar Cambios</button>
@@ -63,7 +63,7 @@ echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
             <h3>Seguro que quieres borrar el grupo</h3>
             <p>Este cambio es irreversible</p>
             <form action="procesar_grupo_entrenador.php" method="POST">
-                <input type="hidden" name="grupo_id" value="<?php echo htmlspecialchars($gid); ?>">
+                <input type="hidden" name="grupo_id" value="<?php echo $gid; ?>">
                 <input type="checkbox" id="confirmarBorrado">
                 <label for="confirmarBorrado">Confirmar borrado</label><br>
                 <button class="cerrar">Cancelar</button>
