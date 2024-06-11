@@ -1,7 +1,7 @@
 <?php
 include_once('../templates/cabecera.html');
-echo "<h1>" . htmlspecialchars($grupo['nombre']) . "</h1>";
-echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
+echo "<h1>" . $grupo['nombre'] . "</h1>";
+echo "<h2>" . $grupo['descripcion'] . "</h2>";
 ?>
 
     <h3>Entrenadores</h3>
@@ -16,8 +16,8 @@ echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
             <?php
             foreach ($entrenadores as $entrenador) {
                 echo "<tr>";
-                echo "<td>" . htmlspecialchars($entrenador['nombre']) . "</td>";
-                echo "<td>" . htmlspecialchars($entrenador['especialidad']) . "</td>";
+                echo "<td>" . $entrenador['nombre'] . "</td>";
+                echo "<td>" . $entrenador['especialidad'] . "</td>";
                 echo "</tr>";
             }
             ?>
@@ -36,8 +36,8 @@ echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
             <?php
             foreach ($deportistas as $deportista) {
                 echo "<tr>";
-                echo "<td>" . htmlspecialchars($deportista['nombre']) . "</td>";
-                echo "<td>" . htmlspecialchars($deportista['nivel']) . "</td>";
+                echo "<td>" . $deportista['nombre'] . "</td>";
+                echo "<td>" . $deportista['nivel'] . "</td>";
                 echo "</tr>";
             }
             ?>
