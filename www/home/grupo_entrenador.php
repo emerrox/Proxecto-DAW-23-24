@@ -12,8 +12,8 @@ echo "<h2>" . $grupo['descripcion'] . "</h2>";
             <tr>
                 <th>Nombre</th>
                 <th>Especialidad</th>
-                <th>Eliminar</th>
-                <th>Cambiar a Deportista</th>
+                <th class="opc">Cambiar a Deportista</th>
+                <th class="opc">Eliminar</th>
             </tr>
         </thead>
         <tbody>
@@ -22,8 +22,8 @@ echo "<h2>" . $grupo['descripcion'] . "</h2>";
                 echo "<tr>";
                 echo "<td>" . $entrenador['nombre'] . "</td>";
                 echo "<td>" . $entrenador['especialidad'] . "</td>";
-                echo "<td><input type='checkbox' name='eliminar_entrenadores[]' value='" . $entrenador['id'] . "'></td>";
-                echo "<td><input type='checkbox' name='cambiar_entrenadores[]' value='" . $entrenador['id'] . "'></td>";
+                echo "<td class="opc"><input type='checkbox' name='cambiar_entrenadores[]' value='" . $entrenador['id'] . "'></td>";
+                echo "<td class="opc"><input type='checkbox' name='eliminar_entrenadores[]' value='" . $entrenador['id'] . "'></td>";
                 echo "</tr>";
             }
             ?>
@@ -36,8 +36,8 @@ echo "<h2>" . $grupo['descripcion'] . "</h2>";
             <tr>
                 <th>Nombre</th>
                 <th>Nivel</th>
-                <th>Eliminar</th>
-                <th>Cambiar a Entrenador</th>
+                <th class="opc">Cambiar a Entrenador</th>
+                <th class="opc">Eliminar</th>
             </tr>
         </thead>
         <tbody>
@@ -46,8 +46,8 @@ echo "<h2>" . $grupo['descripcion'] . "</h2>";
                 echo "<tr>";
                 echo "<td>" . $deportista['nombre'] . "</td>";
                 echo "<td>" . $deportista['nivel'] . "</td>";
-                echo "<td><input type='checkbox' name='eliminar_deportistas[]' value='" . $deportista['id'] . "'></td>";
-                echo "<td><input type='checkbox' name='cambiar_deportistas[]' value='" . $deportista['id'] . "'></td>";
+                echo "<td class="opc"><input type='checkbox' name='cambiar_deportistas[]' value='" . $deportista['id'] . "'></td>";
+                echo "<td class="opc"><input type='checkbox' name='eliminar_deportistas[]' value='" . $deportista['id'] . "'></td>";
                 echo "</tr>";
             }
             ?>
