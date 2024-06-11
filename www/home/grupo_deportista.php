@@ -1,4 +1,5 @@
 <?php
+include_once('../templates/cabecera.html');
 echo "<h1>" . htmlspecialchars($grupo['nombre']) . "</h1>";
 echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
 ?>
@@ -47,3 +48,4 @@ echo "<h2>" . htmlspecialchars($grupo['descripcion']) . "</h2>";
     <input type="hidden" name="grupo_id" id="grupo_id" value=<?php echo $gid; ?>>
     <button type="submit" id="salir" name="salir" >Salir del grupo</button>
 </form>
+<?php include_once('../templates/footer.html'); ?>
