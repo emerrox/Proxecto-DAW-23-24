@@ -21,7 +21,7 @@ KayakPlus es una aplicación diseñada para brindar apoyo a los deportistas y en
 
 ## Instalación / Posta en marcha
 
-Usar xampp 8.2.4-0 con phpmyadmin 5.2.1 y PHP 8.2.4, copiar el contenido de la carpeta www en htdocs y en el phpmyadmin ejecutar el archivo sql para crear la bbdd y opcionalmente el de insercion de datos de prueba
+Usar xampp 8.2.4-0 con phpmyadmin 5.2.1 y PHP 8.2.4, copiar el contenido de la carpeta [www](/www) en htdocs y en el phpmyadmin ejecutar el archivo sql para [crear la bbdd](/doc/utils/kayakplus_schema.sql) y opcionalmente el de [insercion de datos](/doc/utils/kayakplus_pruebas.sql) de prueba
 
 ## Uso
 
