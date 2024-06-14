@@ -17,7 +17,7 @@
 
 **Descarga e instalación:**
 
-  Bajar la carpeta [www](/www) y añadirlo directamente al htdocs (xamp)
+  Bajar la carpeta [www](/www) y añadir su contenido directamente al htdocs (xamp)
 
 **Configuración de la base de datos**
 
