@@ -13,7 +13,7 @@
 
 **Requisitos**
 
-  Un servidor como xampp con phpmyadmin y php o un servidor en la nube de terceros en los que subir los archivos o incluso uno dedicado, debe tener php y phpmyadmin
+  Un servidor como xampp 8.2.4-0 con phpmyadmin y php o un servidor en la nube de terceros en los que subir los archivos o incluso uno dedicado, debe tener php y phpmyadmin
 
 **Descarga e instalación:**
 
