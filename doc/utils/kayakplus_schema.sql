@@ -1,5 +1,5 @@
 -- Crear la base de datos y usarla
-CREATE DATABASE kayakplus;
+CREATE DATABASE IF NOT EXISTS kayakplus;
 USE kayakplus;
 
 -- tabla de usuarios
@@ -59,6 +59,7 @@ CREATE TABLE entrenos (
     hora_fin TIMESTAMP NOT NULL,
     grupo_id INT NOT NULL,
     entrenador_id INT NOT NULL,
+    bloques TEXT,
     FOREIGN KEY (grupo_id) REFERENCES grupos(id) ON DELETE CASCADE, 
     FOREIGN KEY (entrenador_id) REFERENCES entrenadores(id) ON DELETE RESTRICT ON UPDATE CASCADE
 );

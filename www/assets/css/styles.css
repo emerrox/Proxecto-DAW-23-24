@@ -1,37 +1,27 @@
 :root {
     --primary-color: #03045E;
     --secondary-color: #0077B6;
-    --tertiary-color: #00B4D8;
-    --quaternary-color: #d1d3d3;
+    --tertiary-color: #E1EFF6;
+    --quaternary-color: #FCFCFC;
     --quinary-color: #cee0e4;
     --complementario: #FF840A;
     --error-color: #FF0000;
-}
-
-.minus {
-    text-transform: lowercase;
-}
-
-.mayus {
-    text-transform: uppercase;
-}
-
-button {
-    text-transform: uppercase;
+    --dark-error: #800000;
+    --btn-hover: #0aa9ed;
+    --modal-background: rgba(0, 0, 0, 0.5);
+    --modal-content-background: #fff;
+    --modal-width: 80%;
+    --modal-padding: 20px;
+    --modal-border-radius: 10px;
 }
 
 body {
-    background-color: var(--quaternary-color);
+    background-color: var(--bg-color);
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-a, a:hover {
-    color: var(--primary-color);
-    text-decoration: none;
 }
 
 header {
@@ -46,31 +36,25 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+h3, h2, dialog h3 {
+    margin: 15px auto;
+    text-align: center;
+}
+
+header a,
+header a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 .kayak {
     font-weight: bolder;
     text-transform: uppercase;
     font-size: large;
 }
 
-header a,
-header a:hover,
-footer a,
-footer a:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
 p.kayak span {
     color: var(--complementario);
-}
-
-main {
-    flex: 1;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 }
 
 footer {
@@ -94,68 +78,51 @@ footer ul {
     word-wrap: none;
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 80%;
-    text-align: center;
+footer a,
+footer a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
-.container h2 {
-    color: var(--primary-color);
-}
-
-.container form {
-    margin-top: 20px;
-    text-transform: uppercase;
-}
-
-.container form label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--primary-color);
-}
-
-.container form input[type="text"],
-.container form input[type="password"],
-.container form input[type="email"],
-.container form button {
-    width: 100%;
-    height: 2.5rem;
-    margin-bottom: 15px;
+button {
+    background-color: var(--secondary-color);
+    color: #fff;
     border: none;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: var(--primary-color);
-}
-
-.container form input.valid {
-    outline: 1px solid var(--quinary-color);
-}
-
-.container form button {
-    background-color: var(--primary-color);
-    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
     cursor: pointer;
+    text-transform: uppercase;
     transition: background-color 0.3s ease;
 }
 
-.container form button:hover {
-    background-color: var(--secondary-color);
+button:hover {
+    background-color: var(--btn-hover);
 }
 
-.invalid {
-    outline: 1px solid var(--error-color);
+button:disabled, button:disabled:hover {
+    background-color: var(--quaternary-color);
+    color: #999;
+    cursor: not-allowed;
 }
 
-.error-message {
-    text-transform: initial;
-    color: var(--error-color);
-    font-size: 0.7rem;
-    visibility: hidden;
-    display: inline-block;
+.peligro:hover {
+    background-color: var(--error-color);
+}
+
+.peligro {
+    background-color: var(--dark-error);
+}
+
+.minus {
+    text-transform: lowercase;
+}
+
+.mayus {
+    text-transform: uppercase;
+}
+
+a, a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
 }

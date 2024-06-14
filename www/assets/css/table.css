@@ -1,0 +1,149 @@
+:root {
+    --bg-color: #fbfdfd;
+}
+
+.container {
+    padding: 20px;
+    margin-top: 80px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+#administracion {
+    margin-top: 20px;
+}
+
+#administracion h3 {
+    width: 50%;
+    text-align: left;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 50px;
+    table-layout: fixed;
+    background-color: var(--tertiary-color);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--quinary-color);
+}
+
+.opc {
+    width: 7%;
+}
+
+/* Modal Styles */
+dialog::backdrop {
+    background: var(--modal-background);
+}
+
+dialog {
+    padding: 20px 50px;
+    border-radius: var(--modal-border-radius);
+    background: var(--modal-content-background);
+    border: none;
+}
+
+dialog h3 {
+    margin-top: 0;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+dialog form input {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+    .container {
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .opc {
+        width: auto;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+
+    dialog {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    th, td {
+        padding: 3px;
+        font-size: 0.8em;
+    }
+
+    button {
+        padding: 3px 7px;
+        font-size: 0.8em;
+    }
+
+    dialog {
+        width: 100%;
+        padding: 10px;
+    }
+}

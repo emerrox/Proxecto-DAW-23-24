@@ -40,6 +40,6 @@ INSERT INTO grupo_entrenadores (grupo_id, entrenador_id) VALUES
 (2, 6); -- Usuario6 entrenando en Grupo B
 
 -- Insertar entrenos
-INSERT INTO entrenos (nombre, descripcion, hora_inicio, hora_fin, grupo_id, entrenador_id) VALUES
-('Entreno de velocidad', 'Entrenamiento intenso de velocidad en el agua', '2024-06-21T10:00:00', '2024-06-21T11:00:00', 1, 4),
-('Entreno de resistencia', 'Entrenamiento de resistencia y fondo', '2024-06-22T09:00:00', '2024-06-22T11:00:00', 2, 5);
+INSERT INTO entrenos (nombre, descripcion, hora_inicio, hora_fin, grupo_id, entrenador_id, bloques) VALUES
+('Entreno de velocidad', 'Entrenamiento intenso de velocidad en el agua', '2024-06-21T10:00:00', '2024-06-21T11:00:00', 1, 4,'[[{"ritmo":"r0","tipo":"metros","duracion":"4"}]]'),
+('Entreno de resistencia', 'Entrenamiento de resistencia y fondo', '2024-06-22T09:00:00', '2024-06-22T11:00:00', 2, 5,'[[{"ritmo":"r4","tipo":"metros","duracion":"5"}]]');
