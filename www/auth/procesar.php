@@ -1,15 +1,7 @@
 <?php
 include_once('../utils/bd.php');
+include_once('../utils/funciones.php');
 $conn = conectar_bd();
-
-// Funcion para limpiar datos de entrada
-function clean_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data); 
-    return $data;
-}
-
 
 $name = clean_input($_POST['name']);
 $pass = clean_input($_POST['pass']);
@@ -39,6 +31,9 @@ if (!($name == '' || $pass == '')) {
                 $login_error='contraseña incorrecta';
             }
         }
+    }
+    if ($login_error!= '') {
+        setcookie('error',$login_error,time() + 2);
     }
     $sql->close();
     $conn->close();

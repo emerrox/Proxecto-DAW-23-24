@@ -1,4 +1,3 @@
-const $d = document;
 const forms = document.querySelectorAll('form');
 
 function validateInput(input) {
@@ -6,15 +5,24 @@ function validateInput(input) {
     let isValid = false;
     let errorMessage = '';
 
-    if (input.type === 'text') {
-        isValid = /^[a-zA-Z0-9]{3,}$/.test(inputValue);
+    if (input.type == 'text') {
+        isValid = /^[a-zA-Z0-9\s]{3,}$/.test(inputValue);
         errorMessage = isValid ? '' : 'Debe tener más de 2 caracteres y solo contener letras y números.';
-    } else if (input.type === 'email') {
+    } else if (input.type == 'email') {
         isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputValue);
         errorMessage = isValid ? '' : 'Debe ser una dirección de correo electrónico válida.';
-    } else if (input.type === 'password') {
+    } else if (input.type == 'password') {
         isValid = inputValue.length >= 6;
         errorMessage = isValid ? '' : 'Debe tener al menos 6 caracteres.';
+    } else if (input.type == 'time') {
+        if (input.id.includes('End')) {
+            const startTime = document.getElementById(input.id.replace('End', '')).value;
+            isValid = startTime < input.value;
+            errorMessage = isValid ? '' : 'La hora de fin debe ser después de la de inicio.';
+        } else {
+            isValid = input.value !== '';
+            errorMessage = isValid ? '' : 'Debes poner una hora.';
+        }
     }
 
     if (!isValid) {
@@ -24,44 +32,41 @@ function validateInput(input) {
     } else {
         input.classList.add('valid');
         input.classList.remove('invalid');
-        $d.querySelector(`#${input.id}-error`).style.visibility = 'hidden';
+        document.querySelector(`#${input.id}-error`).style.visibility = 'hidden';
     }
 }
 
 function showError(input, message) {
-    const errorElement = $d.querySelector(`#${input.id}-error`);
+    const errorElement = document.querySelector(`#${input.id}-error`);
     errorElement.textContent = message;
     errorElement.style.visibility = 'visible';
 }
 
-function checkFormValidity() {
+function validarForm(inputs) {
     let isFormValid = true;
 
-    forms.forEach(form => {
-        const inputs = form.querySelectorAll('input[type="text"], input[type="password"], input[type="email"]');
-
-        inputs.forEach(input => {
-            validateInput(input);
-            if (input.classList.contains('invalid')) {
-                isFormValid = false;
-            }
-        });
+    inputs.forEach(input => {
+        validateInput(input);
+        if (input.classList.contains('invalid')) {
+            isFormValid = false;
+        }
     });
 
     return isFormValid;
 }
 
-$d.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     forms.forEach(form => {
-        const inputs = form.querySelectorAll('input[type="text"], input[type="password"], input[type="email"]');
+        let inputs = form.querySelectorAll('input[type="text"], input[type="password"], input[type="email"], input[type="time"]');
 
         inputs.forEach(input => {
             input.addEventListener('input', () => validateInput(input));
         });
 
-        form.addEventListener('submit', event => {
-            if (!checkFormValidity()) {
-                event.preventDefault();
+        form.addEventListener('submit', (e) => {
+            console.log(!validarForm(inputs));
+            if (!validarForm(inputs)) {
+                e.preventDefault();  // Prevent form submission if validation fails
             }
         });
     });

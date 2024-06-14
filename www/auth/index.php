@@ -11,4 +11,5 @@ if (isset($_POST['ini'])){
 }
 
 // mostrar formulario
-include_once('./form_iniciar.php');
+header('Location: ./form_iniciar.php');
+exit();

@@ -1,9 +1,10 @@
 <?php
 include_once('../utils/bd.php');
+include_once('../utils/funciones.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $conn = conectar_bd();
-    $grupo_id = $_POST['grupo_id'];
+    $grupo_id = clean_input($_POST['grupo_id']);
     if (isset($_POST['borrar2'])) {
         // Borrar las relaciones de entrenadores asociadas al grupo
         $sql = "DELETE FROM grupo_entrenadores WHERE grupo_id = ?";

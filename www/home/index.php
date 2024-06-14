@@ -9,81 +9,89 @@ $conn = conectar_bd();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayakplus</title>
-<script src="../lib/fullcalendar-6.1.13/dist/index.global.js"></script>
-<script src="../lib/fullcalendar-6.1.13/packages/core/locales/es.global.js"></script>
+    <script src="../lib/fullcalendar-6.1.13/dist/index.global.js"></script>
+    <script src="../lib/fullcalendar-6.1.13/packages/core/locales/es.global.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/form.css">
 
 </head>
 <body>
-    <p><a href="../auth/logout.php">cerrar sesion</a></p>
-    <h2 class="encabezado">Entrenos</h2>    
+<header>
+        <a href="../index.php"><p class="kayak" >kayak<span>+</span></p></a>
+    </header>
     <div id="calendario"></div>
 
-    <h2 class="encabezado">Grupos</h2>
+    <h2 class="encabezado">Tus grupos</h2>
     <div id="grupos">
-    <ul id="grupos-lista">
-            <?php
-            // Añadir filas por grupos del que es entrenador
-            foreach ($_SESSION['gEntrenador'] as $gid) {
-                $grupo = get_grupo($gid); // Obtener la información del grupo mediante la función
-            
-                if ($grupo) { // Verificar si se obtuvo información del grupo
-                    $nombre = $grupo['nombre'];
-                    $descripcion = $grupo['descripcion'];
-                    $grupoId = $gid;
-            
-                    echo "<li>";
-                    echo "<a href='grupo.php?gid=$grupoId'>";
-                    echo "<div><strong>Nombre:</strong> $nombre</div>";
-                    echo "<div><strong>Descripción:</strong> $descripcion</div>";
-                    echo "<div><strong>Rol:</strong> Entrenador</div>";
-                    echo "<div><strong>Entrenadores:</strong>";
-            
-                    $entrenadores = get_entrenadores_grupo($grupoId); // Obtener la lista de entrenadores
-            
-                    foreach ($entrenadores as $entrenador) {
-                        echo " " . $entrenador['nombre'];
-                    }
-            
-                    echo "</div>";
-                    echo "</a>";
-                    echo "</li>";
-                }
-            }
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Rol</th>
+                    <th>Entrenador</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                // Añadir filas por grupos del que es entrenador
+                foreach ($_SESSION['gEntrenador'] as $gid) {
+                    $grupo = get_grupo($gid); // Obtener la información del grupo mediante la función
 
-            // Añadir filas por grupos del que es deportista
-            foreach ($_SESSION['gDeportista'] as $gid) {
-                $grupo = get_grupo($gid); // Obtener la información del grupo mediante la función
-            
-                if ($grupo) { // Verificar si se obtuvo información del grupo
-                    $nombre = $grupo['nombre'];
-                    $descripcion = $grupo['descripcion'];
-                    $grupoId = $gid;
-            
-                    echo "<li>";
-                    echo "<a href='grupo.php?gid=$grupoId'>";
-                    echo "<div><strong>Nombre:</strong> $nombre</div>";
-                    echo "<div><strong>Descripción:</strong> $descripcion</div>";
-                    echo "<div><strong>Rol:</strong> Deportista</div>";
-                    echo "<div><strong>Entrenadores:</strong>";
-            
-                    $entrenadores = get_entrenadores_grupo($grupoId); // Obtener la lista de entrenadores
-            
-                    foreach ($entrenadores as $entrenador) {
-                        echo " " . $entrenador['nombre'];
+                    if ($grupo) { // Verificar si se obtuvo información del grupo
+                        $nombre = $grupo['nombre'];
+                        $descripcion = $grupo['descripcion'];
+                        $grupoId = $gid;
+                        echo "<tr>";
+                        echo "<td><a href='grupo.php?gid=$grupoId'>$nombre</a></td>";
+                        echo "<td>$descripcion</td>";
+                        echo "<td>Entrenador</td>";
+                        echo "<td>";
+
+                        $entrenadores = get_entrenadores_grupo($grupoId); // Obtener la lista de entrenadores
+                        foreach ($entrenadores as $entrenador) {
+                            echo $entrenador['nombre'] . " ";
+                        }
+
+                        echo "</td>";
+                        echo "</tr>";
                     }
-            
-                    echo "</div>";
-                    echo "</a>";
-                    echo "</li>";
                 }
-            }
-            ?>
-        </ul>
+
+                // Añadir filas por grupos del que es deportista
+                foreach ($_SESSION['gDeportista'] as $gid) {
+                    $grupo = get_grupo($gid); // Obtener la información del grupo mediante la función
+
+                    if ($grupo) { // Verificar si se obtuvo información del grupo
+                        $nombre = $grupo['nombre'];
+                        $descripcion = $grupo['descripcion'];
+                        $grupoId = $gid;
+                        echo "<tr>";
+                        echo "<td><a href='grupo.php?gid=$grupoId'>$nombre</a></td>";
+                        echo "<td>$descripcion</td>";
+                        echo "<td>Deportista</td>";
+                        echo "<td>";
+
+                        $entrenadores = get_entrenadores_grupo($grupoId); // Obtener la lista de entrenadores
+                        foreach ($entrenadores as $entrenador) {
+                            echo $entrenador['nombre'] . " ";
+                        }
+
+                        echo "</td>";
+                        echo "</tr>";
+                    }
+                }
+                ?>
+            </tbody>
+        </table>
     </div>
-            
-    <button id="add_grupo">Crear grupo</button>
+    <div id="botones">
+        <button id="add_grupo">Crear grupo</button>
+        <button id="join_grupo">Unirse a grupo</button>
 
-    <button id="join_grupo">Unirse a grupo</button>
+    </div>     
+
 
     <!-- Modal para mostrar formulario de unirse a grupo -->
     <dialog id="joinGrupo">
@@ -92,7 +100,8 @@ $conn = conectar_bd();
             <h2>Unirse a nuevo grupo</h2>
             
             <label for="id">Código del grupo:</label>
-            <input type="text" id="idJoinGrupo" name="id" required><br><br>
+            <div id="idJoinGrupo-error" class="error-message"></div> 
+            <input type="number" id="idJoinGrupo" name="id" required><br><br>
 
             <button type="submit">Unirse</button>
         </form>
@@ -105,6 +114,7 @@ $conn = conectar_bd();
             <h2>Crear Nuevo Grupo</h2>
             
             <label for="nombre">Nombre:</label>
+            <div id="nombreCrearGrupo-error" class="error-message"></div> 
             <input type="text" id="nombreCrearGrupo" name="nombre" required><br><br>
 
             <label for="descripcion">Descripción:</label>
@@ -115,32 +125,43 @@ $conn = conectar_bd();
     </dialog>
 
     <!-- Modal para mostrar la información del evento -->
-    <dialog id="infoModal">
+    <dialog id="infoModal" class="container">
         <span class="close-btn" id="closeInfoModal" data-id="infoModal">x</span>
         <h2 id="eventTitle"></h2>
         <p id="eventInfo"></p>
+        <p id="eventTime"></p>
+        <div id="mostrarEntrenos"></div>
     </dialog>
 
     <!-- Modal para crear un nuevo evento -->
-    <dialog id="añadirModal" data-id="<?php echo count($_SESSION['gEntrenador']); ?>">
+    <dialog id="añadirModal" class="container" data-id="<?php echo count($_SESSION['gEntrenador']); ?>">
         <span class="close-btn" id="closeAñadir" data-id="añadirModal">x</span>
         <form id="añadirForm" >
             <h2>Crear Evento</h2>
+
+            <div class="entreno" id="eventBloqueInput"></div>
+            <div class="addBloque" id="eventAddBloqueInput" data-id="Input">Añadir bloque</div>
+
+
             <label for="eventTitleInput">Título</label>
+            <div id="eventTitleInput-error" class="error-message"></div> 
             <input type="text" id="eventTitleInput" required>
-            <br>
+
             <label for="eventDescriptionInput">Descripción</label>
             <textarea id="eventDescriptionInput"></textarea>
-            <br>
+            
             <label for="eventDateInput">Fecha</label>
+            <div id="eventDateInput-error" class="error-message"></div> 
             <input type="date" id="eventDateInput" required>
-            <br>
+            
             <label for="eventTimeInput">Hora inicio</label>
+            <div id="eventTimeInput-error" class="error-message"></div> 
             <input type="time" id="eventTimeInput" required>
-            <br>
+            
             <label for="eventTimeEndInput">Hora fin</label>
+            <div id="eventTimeEndInput-error" class="error-message"></div> 
             <input type="time" id="eventTimeEndInput" required>
-            <br>
+            
             <label for="eventSelectInput">Grupo</label>
             <select id="eventSelectInput" required>
                 <?php
@@ -162,11 +183,16 @@ $conn = conectar_bd();
     </dialog>
 
         <!-- Modal para editar un evento -->
-    <dialog id="editarModal">
+    <dialog id="editarModal" class="container">
         <span class="close-btn" id="closeEditar" data-id="editarModal">x</span>
         <form id="editarForm" >
             <h2>Editar Evento</h2>
+
+            <div class="entreno" id="eventBloqueEdit"></div>
+            <div class="addBloque" id="eventAddBloqueEdit" data-id="Edit">Añadir bloque</div>
+
             <label for="eventTitleEdit">Título</label>
+            <div id="eventTitleEdit-error" class="error-message"></div> 
             <input type="text" id="eventTitleEdit" required>
             <br>
             <label for="eventDescriptionEdit">Descripción</label>
@@ -176,9 +202,11 @@ $conn = conectar_bd();
             <input type="date" id="eventDateEdit" required>
             <br>
             <label for="eventTimeEdit">Hora inicio</label>
+            <div id="eventTimeEdit-error" class="error-message"></div> 
             <input type="time" id="eventTimeEdit" required>
             <br>
             <label for="eventTimeEndEdit">Hora fin</label>
+            <div id="eventTimeEndEdit-error" class="error-message"></div> 
             <input type="time" id="eventTimeEndEdit" required>
             <br>
             <label for="eventSelectEdit">Grupo</label>
@@ -197,14 +225,18 @@ $conn = conectar_bd();
                  ?>
             </select>
             <br>
-            <button type="submit">Editar Evento</button>
-            <button type="button" id="btnDelete">Borrar Evento</button>
+            <div id="botones-modal">
+                <button type="submit">Editar Evento</button>
+                <button type="button" id="btnDelete" class="peligro">Borrar Evento</button>
+            </div>
         </form>
     </dialog>
 
-    <script src="calendario.js"></script>
-</body>
-</html>
+
+    <script src="../assets/js/auth_forms.js"></script>
+    <script src="../assets/js/calendario.js"></script>
+
+    <?php include_once('../templates/footer.html'); ?>
 <?php
 $conn->close();
 ?>

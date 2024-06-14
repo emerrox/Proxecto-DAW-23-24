@@ -1,13 +1,14 @@
 <?php
 session_start();
 include_once('../utils/bd.php');
+include_once('../utils/funciones.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $conn = conectar_bd();
 
-    $nombre = $_POST['nombre'];
-    $descripcion = $_POST['descripcion'];
-    $usuario_id = $_SESSION['id'];
+    $nombre = clean_input($_POST['nombre']);
+    $descripcion = clean_input($_POST['descripcion']);
+    $usuario_id = clean_input($_SESSION['id']);
 
     // Validar entradas
     if (empty($nombre) || empty($descripcion)) {

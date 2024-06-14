@@ -8,5 +8,5 @@ if (isset($_COOKIE)) {
     }
 }
 
-header("Location: /");
+header("Location: ../");
 exit();

@@ -1,9 +1,10 @@
 :root {
+    --bg-color: #f0f0f0;
     --primary-color: #03045E;
     --secondary-color: #0077B6;
-    --tertiary-color: #E1EFF6;
+    --tertiary-color: #f2f2f2;
     --quaternary-color: #FCFCFC;
-    --quinary-color: #cee0e4;
+    --quinary-color: #ddd;
     --complementario: #FF840A;
     --error-color: #FF0000;
     --dark-error: #800000;
@@ -84,7 +85,7 @@ footer a:hover {
     color: inherit;
 }
 
-button {
+button, .añadir-serie, .addBloque {
     background-color: var(--secondary-color);
     color: #fff;
     border: none;
@@ -96,7 +97,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:hover, .añadir-serie:hover, .addBloque:hover {
     background-color: var(--btn-hover);
 }
 
@@ -106,11 +107,11 @@ button:disabled, button:disabled:hover {
     cursor: not-allowed;
 }
 
-.peligro:hover {
+.peligro:hover, #btnDelete:hover {
     background-color: var(--error-color);
 }
 
-.peligro {
+.peligro, #btnDelete {
     background-color: var(--dark-error);
 }
 
@@ -125,4 +126,360 @@ button:disabled, button:disabled:hover {
 a, a:hover {
     color: var(--primary-color);
     text-decoration: none;
+}
+
+#calendario{
+    max-width: 1600px;
+    width: 70%;
+    max-height: 85vh;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--quaternary-color);
+    transition: all ease-in-out 300ms;
+}
+
+.fc {
+    font-family: Arial, sans-serif;
+}
+
+.fc-toolbar {
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    margin: 0px 20px;
+}
+
+.fc-toolbar .fc-button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.fc-toolbar .fc-button:hover {
+    background-color: var(--btn-hover);
+}
+
+.fc-toolbar h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.fc-daygrid-day {
+    border: 1px solid var(--quinary-color);
+    transition: background-color 0.3s ease;
+}
+
+.fc-daygrid-day:hover {
+    background-color: #F0F4F8;
+}
+
+.fc-daygrid-event {
+    height: 40px;
+    background-color: var(--btn-hover);
+    color: var(--quaternary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.fc-daygrid-event:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover);
+}
+
+.fc-daygrid-day-number {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: var(--quinary-color);
+}
+
+.fc-scrollgrid {
+    border-radius: 0 0 10px 10px;
+}
+
+.fc-daygrid-event-dot{
+    display: none;
+}
+
+.fc-event-time{
+    display: none;
+}
+.fc-event-title{
+    text-align: center;
+}
+
+.fc .fc-list-sticky .fc-list-day > *{
+    position: unset;
+}
+
+.fc-daygrid-event-harness{
+    height: 10%;
+}
+
+dialog.container{
+    height: 80%;
+    max-width: 600px;
+}
+
+#infoModal{
+    max-width: 400px;
+}
+
+#grupos table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 50px;
+    table-layout: fixed;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 300ms;
+}
+
+#grupos th, #grupos td {
+    padding: 10px;
+    text-align: center;
+}
+
+#grupos th {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+#grupos th:first-child {
+    border-top-left-radius: 10px;
+}
+
+#grupos th:last-child {
+    border-top-right-radius: 10px;
+}
+
+#grupos table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+#grupos table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+#grupos tr:nth-child(even) td {
+    background-color: var(--quinary-color);
+}
+
+#botones {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+dialog {
+    width: var(--modal-width);
+    max-width: 500px;
+    border: none;
+    border-radius: var(--modal-border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: var(--modal-padding);
+    font-family: Arial, sans-serif;
+    background-color: var(--modal-content-background);
+}
+
+dialog form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+dialog label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+dialog.container form input,
+dialog.container form input[type="text"],
+dialog form input[type="date"],
+dialog form input[type="time"],
+dialog form textarea,
+#nombreCrearGrupo,
+#idJoinGrupo {
+    width: 100%;
+    height: 20px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#editarForm form{
+    width: 90%;
+}
+
+dialog form select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+dialog button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+dialog button:hover {
+    background-color: var(--btn-hover);
+}
+
+dialog .close-btn {
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 35px;
+    top: 10px;
+    right: 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5px;
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+dialog .close-btn:hover {
+    background-color: var(--btn-hover);
+    color: #f0f0f0;
+}
+
+.bloque {
+    padding: 10px;
+    background-color: lightgray;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.serie {
+    background-color: var(--bg-color);
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px;
+    gap: 5px;
+    padding: 5px;
+
+}
+
+.contenedor-botones-bloque{
+    order: 1;
+}
+
+.añadir-serie{
+    order:1;
+    width: 52%;
+}
+
+.serie .eliminar-serie, .contenedor-botones-bloque .eliminar-bloque{
+    background-color: var(--dark-error);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+    max-width: 30px;
+}
+
+.serie .eliminar-serie:hover, .contenedor-botones-bloque .eliminar-bloque:hover{
+    background-color: var(--error-color);
+}
+
+.contenedor-botones-bloque .eliminar-bloque{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.entreno .contenedor-botones-bloque{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: 0;
+    gap: 45px;
+}
+
+@media (max-width: 900px) {
+    #grupos table {
+        width: 90%;
+    }
+
+    #calendario {
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fc-toolbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .fc-toolbar .fc-toolbar-chunk {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #grupos th, #grupos td {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #grupos table {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    #calendario {
+        padding: 5px;
+        font-size: 0.7em;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 15px;
+    }
 }

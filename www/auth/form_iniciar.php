@@ -1,8 +1,24 @@
-<?php include_once('../templates/cabecera.html'); ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KayakPlus</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
+</head>
+<body>
+    <header>
+        <a href="../index.php"><p class="kayak" >kayak<span>+</span></p></a>
+    </header>
 <main>
     <div class="container">
         <h2 class="mayus">Iniciar Sesión</h2>
-        <?php echo $login_error ?>
+        <?php 
+        if (isset($_COOKIE['error'])) {
+            echo $_COOKIE['error'];
+        }
+        ?>
         <form id="loginForm" action="./index.php" method="post">
             <label for="name">Usuario</label>
             <div class="error-message" id="name-error"></div>
