@@ -19,7 +19,7 @@
 ## 3- Diagrama de Base de Datos
 
 - [Modelo Entidade/relación](./img/Entidad-relacion.JPG)
-- Modelo relacional (captura phpmyadmin)
+- [Modelo relacional](./img/relacional.JPG) (captura phpmyadmin)
 
 
 ## 4- Deseño de interface de usuarios
