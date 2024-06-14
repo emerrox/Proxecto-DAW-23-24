@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (e) => {
             console.log(!validarForm(inputs));
             if (!validarForm(inputs)) {
-                e.preventDefault();  // Prevent form submission if validation fails
+                e.preventDefault();  
             }
         });
     });

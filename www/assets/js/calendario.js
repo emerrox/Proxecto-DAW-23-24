@@ -52,7 +52,7 @@ function mostrar_info(e) {
     eventTime.textContent = `${e.start.toISOString().split('T')[1].split(':')[0]}:${e.start.toISOString().split('T')[1].split(':')[1]} - ${e.end.toISOString().split('T')[1].split(':')[0]}:${e.end.toISOString().split('T')[1].split(':')[1]} `;
     eventInfo.textContent = e.extendedProps.description;
     const arrEntrenos = JSON.parse(e.extendedProps.bloques);
-    mostrarEntrenos.innerHTML = '';  // Limpiar contenido previo
+    mostrarEntrenos.innerHTML = '';  
     arrEntrenos.forEach((innerArray, index) => {
         let bloque = $d.createElement('div');
         bloque.className = 'bloque';
@@ -182,7 +182,7 @@ function mostrar_editarForm(entreno) {
 
     const arrEntrenos = JSON.parse(entreno.extendedProps.bloques);
     const eventBloqueEdit = $d.getElementById('eventBloqueEdit');
-    eventBloqueEdit.innerHTML = '';  // Limpiar contenido previo
+    eventBloqueEdit.innerHTML = '';  
 
     arrEntrenos.forEach((innerArray, index) => {
         let bloque = $d.createElement('div');
