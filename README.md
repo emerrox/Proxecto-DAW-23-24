@@ -31,6 +31,11 @@ Usar xampp 8.2.4-0 con phpmyadmin 5.2.1 y PHP 8.2.4, copiar el contenido de la c
 - **Modificar entreno:** Los entrenadores pueden modificar los detalles de un entreno existente en la base de datos.
 - **Eliminar entreno:** Los entrenadores pueden eliminar un entreno de la base de datos.
 - **Abrir entreno:** Los usuarios pueden ver información detallada de un entreno específico en la página web.
+- **Crear grupo:** Se crea un grupo en la bbdd y el usuario que lo crea se convierte en entrenador.
+- **Entrar a grupo:** Se relaciona un grupo y un usuario como deportista.
+- **Eliminar grupo:** Se borran todos los datos del grupo.
+- **Salir del grupo:** Se borra la relacion entre el usuario y el grupo.
+- **Editar grupo:** El entrenador puede cambiar o editar la relacion de los demas usuarios con el grupo.
 
 ## Sobre o autor
 
