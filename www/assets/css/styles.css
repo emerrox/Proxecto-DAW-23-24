@@ -466,6 +466,12 @@ dialog .close-btn:hover {
     #grupos th, #grupos td {
         padding: 5px;
     }
+    .serie{
+        flex-direction: column;
+    }
+    dialog.container form input{
+        width: unset;
+    }
 }
 
 @media (max-width: 480px) {
@@ -481,5 +487,8 @@ dialog .close-btn:hover {
 
     .fc .fc-toolbar-title {
         font-size: 15px;
+    }
+    .fc-daygrid-event{
+        height: unset;
     }
 }
