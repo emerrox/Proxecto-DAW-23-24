@@ -57,4 +57,4 @@ Los datos que no estén directamente relacionados con las actividades deportivas
 
 ## 6- Melloras futuras
 
-Para mejorar la seguridad y la facilidad de inicio de sesion y registro de usuarios se implementará oauth de google que ademas permite el uso de la api de google calendar para sincronizar los calendarios
+Para mejorar la seguridad y la facilidad de inicio de sesion y registro de usuarios se implementará oauth de google que ademas permite el uso de la api de google calendar para sincronizar los calendarios, añadir pasarela de pago y mejorar el planteamiento para que los usuarios entren a un grupo
