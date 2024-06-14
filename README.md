@@ -61,7 +61,10 @@ Este proyecto está licenciado bajo la [Licencia Pública General de GNU (GPL-3.
 
 ## Guía de contribución
 
-> EXPLICACIÓN*: Tratándose dun proxecto de software libre, é moi importante que expoñas como se pode contribuír co teu proxecto. Algúns exemplos disto son realizar novas funcionalidades, corrección e/o optimización do código, realización de tests automatizados, novas interfaces de integración, desenvolvemento de plugins etc. Se o máis conciso que poidas.
+1. Clona el repositorio
+2. Realiza los cambios
+3. Haz commit
+4. Abre una pull request
 
 ## Links
 
