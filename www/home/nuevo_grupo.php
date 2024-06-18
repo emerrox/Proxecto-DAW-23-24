@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $row = $result->fetch_assoc();
     
     if ($row['count'] == 0) {
-        $especialidad = 'General' 
+        $especialidad = 'General';
         $sql = "INSERT INTO entrenadores (id, especialidad) VALUES (?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("is", $usuario_id, $especialidad);
