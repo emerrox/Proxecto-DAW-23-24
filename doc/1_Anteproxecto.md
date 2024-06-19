@@ -22,7 +22,7 @@
 
 ## 1- Descrición do proxecto
 
-KayakPlus es una aplicación diseñada para brindar apoyo a los deportistas y entrenadores de cualquier deporte de embarcaciones ligeras. Los entrenadores podrán seguir, organizar y ver estádisticas de los entrenamientos de sus deportistas de forma detallada, al organizar entrenos podran elegir a que deportistas asignarlos y el dia, tambien va a poder ver datos meteorologicos de ese dia (es un factor muy importante de estos deportes), y los propios deportistas pueden ver el programa semanal que le corresponde para su categoria y modalidad. Para los deportistas es gratuito pero los entrenadores tienen que pagar una subscripción.
+KayakPlus es una aplicación diseñada para brindar apoyo a los deportistas y entrenadores de cualquier deporte de embarcaciones ligeras. Los entrenadores podrán seguir, organizar y ver estádisticas de los entrenamientos de sus deportistas de forma detallada, al organizar entrenos podran elegir a que deportistas asignarlos y el dia, y los propios deportistas pueden ver el programa semanal que le corresponde para su categoria y modalidad. Para los deportistas es gratuito pero los entrenadores tienen que pagar una subscripción.
 
 ## 2- Empresa
 
